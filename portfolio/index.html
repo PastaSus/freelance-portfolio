@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Frontend Developer Portfolio - Specializing in accessible, responsive landing pages with modern web technologies"
+    />
+    <title>Aaron Cerezo - Frontend Developer Portfolio</title>
+
+    <!-- Preload critical fonts -->
+    <!-- Google Fonts Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <link rel="stylesheet" href="/src/style.css" type="text/css" />
+    <title>Aaron Cerezo - Frontend Developer Portfolio</title>
+  </head>
+  <body>
+    <!-- Skip to main content link for screen readers -->
+    <a
+      href="#main"
+      class="skip-link absolute -top-10 left-0 bg-black px-4 py-2 text-white"
+      >Skip to main content</a
+    >
+
+    <!-- Header -->
+    <header
+      class="header sticky top-0 z-50 bg-white/15 shadow-sm backdrop-blur"
+    >
+      <nav
+        class="nav relative container mx-auto flex items-center justify-between px-4 py-4"
+        aria-label="Main navigation"
+      >
+        <a
+          href="#"
+          class="logo flex items-center gap-2 text-xl font-bold no-underline"
+          aria-label="Back to Home Page"
+        >
+          <div
+            class="logo__placeholder flex h-10 w-10 items-center justify-center rounded-md bg-blue-950 font-bold text-white"
+            aria-hidden="true"
+          >
+            AC
+          </div>
+          <span class="text-blue-950">Aaron Cerezo</span>
+        </a>
+
+        <button
+          class="nav__menu-toggle cursor-pointer border-0 bg-transparent p-2 md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="my-1 block h-0.5 w-6 bg-black"></span>
+          <span class="my-1 block h-0.5 w-6 bg-black"></span>
+          <span class="my-1 block h-0.5 w-6 bg-black"></span>
+        </button>
+
+        <ul
+          class="nav__links absolute top-full right-0 left-0 hidden list-none flex-col gap-8 bg-white p-4 md:static md:flex md:flex-row md:bg-transparent"
+        >
+          <li>
+            <a href="#projects" class="underline-animate">Projects</a>
+          </li>
+          <li>
+            <a href="#about" class="underline-animate">About</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="underline-animate">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="main">
+      <!-- Hero Section -->
+      <!-- theres overflow hidden on hero idk if theres something overflowing remove later if no overflow -->
+      <section
+        class="hero relative overflow-hidden bg-[#005A9C] py-20 text-center text-white"
+      >
+        <div class="container mx-auto px-4">
+          <header>
+            <h1 class="main-heading mb-4 text-4xl font-bold md:text-5xl">
+              Frontend Developer
+            </h1>
+            <p class="mb-8 text-lg opacity-95 md:text-xl">
+              Crafting Accessible, Responsive, and Performant Web Experiences
+            </p>
+          </header>
+
+          <ul
+            class="tech__stack mt-8 flex flex-wrap justify-center gap-3 delay-400"
+            aria-label="Core Skills and Practices"
+          >
+            <li class="tech__badge">HTML5</li>
+            <li class="tech__badge">CSS3</li>
+            <li class="tech__badge">JavaScript</li>
+            <li class="tech__badge">SCSS/SASS</li>
+
+            <li class="tech__badge">TailwindCSS</li>
+            <li class="tech__badge">A11y/Accessbility</li>
+            <li class="tech__badge">Performance Optimized</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section
+        class="projects container mx-auto px-4 py-20"
+        id="projects"
+        aria-label="Portfolio Projects"
+      >
+        <!-- turn to header tag? -->
+        <header class="projects__header mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-semibold text-blue-950 md:text-4xl">
+            Landing Page Projects
+          </h2>
+          <p class="text-lg text-slate-500">
+            Showcasing modern, accessible, and responsive landing pages.
+          </p>
+        </header>
+
+        <div
+          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+        >
+          <!-- Project 1 -->
+          <article class="project__card">
+            <!-- also optimize imgs in the future -->
+
+            <!-- we can set img here to be bg-img to make it more performant and reduce http requests -->
+
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="./assets/huddle-curved/illustration-grow-together.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="./assets/huddle-curved/illustration-grow-together.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="./assets/huddle-curved/illustration-grow-together.png"
+                alt="Huddle Curved Screenshot"
+              />
+            </picture>
+
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Huddle Landing With Curved Sections
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Single-page SaaS-style landing page challenge, built with curved
+                section dividers, and responsive layouts.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">CSS</li>
+                <li class="project__tech-tag">A11Y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project__card">
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="/assets/bookmark/illustration-bookmark.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="/assets/bookmark/illustration-bookmark.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="/assets/bookmark/illustration-bookmark.png"
+                class="translate-y-4.25"
+                alt="Bookmark Landing Page Screenshot"
+              />
+            </picture>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Bookmark Landing
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Multi-section product landing page with a clean, responsive
+                design, interactive tabbed features, and accessible navigation.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">Tailwind CSS</li>
+                <li class="project__tech-tag">JS</li>
+                <li class="project__tech-tag">A11Y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project__card">
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="/assets/loopstudios/loopstudios-screenshot3.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="/assets/loopstudios/loopstudios-screenshot3.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="/assets/loopstudios/loopstudios-screenshot3.png"
+                class="h-full w-full"
+                alt="loopstudios Landing Page Screenshot"
+              />
+            </picture>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Loopstudios Landing
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Agency-style landing page with immersive hero section,
+                responsive image grids, and accessible navigation patterns.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">SCSS</li>
+                <li class="project__tech-tag">JS</li>
+                <li class="project__tech-tag">A11Y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project4 -->
+          <article class="project__card">
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="/assets/news-homepage/news-homepage-screenshot.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="/assets/news-homepage/news-homepage-screenshot.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="/assets/news-homepage/news-homepage-screenshot.png"
+                class="h-full w-full"
+                alt="loopstudios Landing Page Screenshot"
+              />
+            </picture>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                News Homepage
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                News-style homepage layout challenge, featuring a prominent hero
+                article, category listings, and responsive grid-based design.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">CSS</li>
+                <li class="project__tech-tag">JS</li>
+                <li class="project__tech-tag">A11y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project__card">
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="/assets/room-homepage/room-homepage-screenshot.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="/assets/room-homepage/room-homepage-screenshot.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="/assets/room-homepage/room-homepage-screenshot.png"
+                class=""
+                alt="loopstudios Landing Page Screenshot"
+              />
+            </picture>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Room Homepage
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Furniture store landing page with an interactive hero carousel,
+                responsive breakpoints, and accessible navigation.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">SCSS</li>
+                <li class="project__tech-tag">JS</li>
+                <li class="project__tech-tag">A11y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project__card">
+            <div class="project__image">🍴</div>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Omni-Food Landing
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Project undergoing maintenance...
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">CSS</li>
+                <li class="project__tech-tag">JavaScript</li>
+                <li class="project__tech-tag">A11y</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="multi-page-landing container mx-auto px-4 py-20">
+        <!-- turn to header tag? space-tourism-website-->
+        <header class="projects__header mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-semibold text-blue-950 md:text-4xl">
+            Multi-Page Landing Projects
+          </h2>
+          <p class="text-lg text-slate-500">
+            Multi-page landing projects with accessible design and performance
+            in mind.
+          </p>
+        </header>
+
+        <div
+          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+        >
+          <!-- Project 1 -->
+          <article class="project__card">
+            <picture class="project__image">
+              <!-- AVIF (preferred) -->
+              <source
+                srcset="/assets/space-tourism/space-tourism-screenshot.avif"
+                type="image/avif"
+              />
+              <!-- WebP (fallback 1) -->
+              <source
+                srcset="/assets/space-tourism/space-tourism-screenshot.webp"
+                type="image/webp"
+              />
+              <!-- PNG (fallback 2 / default) -->
+              <img
+                src="/assets/space-tourism/space-tourism-screenshot.png"
+                class=""
+                alt="Space Tourism Screenshot"
+              />
+            </picture>
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Space Tourism Website
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Immersive multi-page space tourism site featuring accessible tab
+                navigation, fully responsive layouts, and semantic HTML for
+                performance.
+              </p>
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">HTML</li>
+                <li class="project__tech-tag">TailwindCSS</li>
+                <li class="project__tech-tag">JavaScript</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="others container mx-auto px-4 py-20">
+        <!-- turn to header tag? -->
+        <header class="projects__header mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-semibold text-blue-950 md:text-4xl">
+            Other Projects
+          </h2>
+          <!-- maybe add a description? -->
+          <p class="text-lg text-slate-500">Mini projects and more.</p>
+        </header>
+
+        <div
+          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+        >
+          <!-- Project 1 -->
+          <article class="project__card">
+            <div class="project__image">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+                width="80"
+                height="80"
+              >
+                <path
+                  d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z"
+                />
+              </svg>
+            </div>
+            <!-- also optimize imgs in the future -->
+
+            <!-- we can set img here to be bg-img to make it more performant and reduce http requests -->
+
+            <div class="project__content p-6">
+              <h3 class="mb-3 text-xl font-semibold text-blue-950">
+                Check Out My GitHub!
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-500">
+                Explore my full collection of projects on GitHub, from
+                multi-page and single-page landing pages to interactive UI
+                components and some mini web apps too!
+              </p>
+
+              <ul
+                class="project__tech mb-4 flex flex-wrap gap-2"
+                aria-label="Technologies used"
+              >
+                <li class="project__tech-tag">Others</li>
+              </ul>
+              <div class="project__links flex flex-wrap gap-3">
+                <a href="#" class="project__demo">Live Demo</a>
+                <a href="#" class="project__source">Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-20 bg-[#0f172a] py-12 text-white">
+      <div class="container mx-auto px-4">
+        <div class="footer__content mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div class="footer__section" id="about">
+            <h3 class="mb-4 text-lg font-semibold">About</h3>
+            <p class="leading-relaxed text-white/80">
+              Specializing in creating accessible, responsive, and performant
+              landing pages using modern web technologies and best practices.
+            </p>
+          </div>
+          <div class="footer__section">
+            <h3 class="mb-4 text-lg font-semibold">Technologies/Core Skills</h3>
+            <ul class="space-y-1 leading-relaxed text-white/80">
+              <li>HTML5</li>
+              <li>CSS3/SASS</li>
+              <li>JavaScript</li>
+              <li>TailwindCSS</li>
+              <li>WCAG Compliance</li>
+              <li>Responsive Design</li>
+              <li>Performance Optimization</li>
+            </ul>
+          </div>
+          <div class="footer__section" id="contact">
+            <h3 class="mb-4 text-lg font-semibold">Contact</h3>
+
+            <ul class="flex flex-col gap-2 leading-relaxed text-white/80">
+              <li>
+                <a
+                  href="mailto:your.email@example.com"
+                  class="underline hover:text-white"
+                  >Email me via Gmail</a
+                >
+              </li>
+              <li>
+                <a href="#" class="underline hover:text-white"
+                  >Visit My LinkedIn Profile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="underline hover:text-white"
+                  >See My Projects On GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="footer__bottom border-t border-white/10 pt-6 text-center text-white/60"
+        >
+          <p class="mt-2 text-xs">
+            Disclaimer: Most Designs are from
+            <a
+              href="https://www.frontendmentor.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline hover:text-white/80"
+            >
+              Frontend Mentor </a
+            >, coded by me.
+          </p>
+          <p class="mt-3">
+            &copy; 2025 Aaron Cerezo. All rights reserved. Built with
+            accessibility and performance in mind.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector(".nav__menu-toggle");
+      const navLinks = document.querySelector(".nav__links");
+
+      menuToggle.addEventListener("click", function () {
+        const isHidden = navLinks.classList.toggle("hidden");
+        this.setAttribute("aria-expanded", isHidden ? "false" : "true");
+        navLinks.classList.add("flex");
+      });
+
+      // add keyup event for spacebar/enter/
+      // Close menu when clicking a nav link
+      document.querySelectorAll(".nav__links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.toggle("hidden");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

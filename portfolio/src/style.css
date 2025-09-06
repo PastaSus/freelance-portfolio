@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Prevent font size inflation */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  /* Remove default margin in favour of better control in authored CSS */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin-block-end: 0;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+
+  /* Set core body defaults */
+  body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    margin: 0;
+
+    /* color: ;
+    background-color: ; */
+  }
+
+  /* Set shorter line heights on headings and interactive elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  button,
+  input,
+  label {
+    line-height: 1.1;
+  }
+
+  /* Balance text wrapping on headings */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* Make sure textareas without a rows attribute are not tiny */
+  textarea:not([rows]) {
+    min-height: 10em;
+  }
+
+  /* Anything that has been anchored to should have extra scroll margin */
+  :target {
+    scroll-margin-block: 5ex;
+  }
+
+  /* ------- RESET ABOVE--------- */
+
+  /* Reduced motion for accessibility*/
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  .underline-animate {
+    @apply relative font-medium text-blue-950 duration-300 ease-in-out after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-950 after:transition-transform hover:after:scale-x-100 focus:after:scale-x-100;
+  }
+
+  .tech__badge {
+    @apply rounded-full border border-white/30 bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur transition-transform ease-in-out hover:-translate-y-0.5 hover:bg-white/30;
+  }
+
+  .project__card {
+    @apply transform overflow-hidden rounded-xl bg-white shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .project__image {
+    @apply flex h-52 items-center justify-center overflow-hidden bg-blue-200 text-5xl text-black;
+  }
+
+  .project__tech-tag {
+    @apply rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-[hsl(205,100%,31%)];
+  }
+
+  .project__demo {
+    @apply flex transform items-center rounded-md bg-blue-500 px-5 py-2 font-medium text-white transition hover:-translate-y-0.5 hover:bg-[hsl(205,100%,40%)] focus:-translate-y-0.5 focus:bg-[hsl(205,100%,40%)];
+  }
+
+  .project__source {
+    @apply transform rounded-md border-2 border-gray-300 px-5 py-2 font-medium text-blue-950 transition hover:-translate-y-0.5 hover:border-blue-500 hover:text-blue-500 focus:-translate-y-0.5 focus:border-blue-500 focus:text-blue-500;
+  }
+}
+
+/* -------------------------------- */
+
+/* Skip to main content - Accessibility */
+.skip-link {
+  text-decoration: none;
+  z-index: 100;
+
+  border-bottom-right-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
