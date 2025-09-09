@@ -17,19 +17,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       />
     </noscript>
 
     <link rel="stylesheet" href="/src/style.css" type="text/css" />
-    <title>Aaron Cerezo - Frontend Developer Portfolio</title>
+    <title>Freelance Web Development - Aaron Cerezo</title>
   </head>
   <body>
     <!-- Skip to main content link for screen readers -->
@@ -38,54 +38,46 @@
       class="skip-link absolute -top-10 left-0 bg-black px-4 py-2 text-white"
       >Skip to main content</a
     >
-
     <!-- Header -->
     <header
-      class="header sticky top-0 z-50 bg-white/15 shadow-sm backdrop-blur"
+      class="header sticky top-0 z-50 bg-white/35 p-3 shadow-sm backdrop-blur"
     >
-      <nav
-        class="nav relative container mx-auto flex items-center justify-between px-4 py-4"
-        aria-label="Main navigation"
-      >
-        <a
-          href="#"
-          class="logo flex items-center gap-2 text-xl font-bold no-underline"
-          aria-label="Back to Home Page"
+      <div class="text-center">
+        <h2 class="text-2xl text-blue-950">Aaron Cerezo</h2>
+        <p class="text-lg tracking-widest">Web Development</p>
+      </div>
+
+      <div>
+        <nav
+          class="nav relative container mx-auto flex justify-center px-4 py-4"
+          aria-label="Main navigation"
         >
-          <div
-            class="logo__placeholder flex h-10 w-10 items-center justify-center rounded-md bg-blue-950 font-bold text-white"
-            aria-hidden="true"
+          <!-- different fonts for heading and body text -->
+
+          <ul class="nav__links flex gap-4">
+            <li>
+              <a href="#home" class="underline-animate">Home</a>
+            </li>
+            <li>
+              <a href="#projects" class="underline-animate">Projects</a>
+            </li>
+            <li>
+              <a href="#about" class="underline-animate">About</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="underline-animate">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <a
+            href="#"
+            class="cta inline-block w-full rounded-full bg-blue-900 py-3 text-center text-slate-200"
+            >Hire Me</a
           >
-            AC
-          </div>
-          <span class="text-blue-950">Aaron Cerezo</span>
-        </a>
-
-        <button
-          class="nav__menu-toggle cursor-pointer border-0 bg-transparent p-2 md:hidden"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-        >
-          <span class="my-1 block h-0.5 w-6 bg-black"></span>
-          <span class="my-1 block h-0.5 w-6 bg-black"></span>
-          <span class="my-1 block h-0.5 w-6 bg-black"></span>
-        </button>
-
-        <ul
-          class="nav__links absolute top-full right-0 left-0 hidden list-none flex-col gap-8 bg-white p-4 md:static md:flex md:flex-row md:bg-transparent"
-        >
-          <li>
-            <a href="#projects" class="underline-animate">Projects</a>
-          </li>
-          <li>
-            <a href="#about" class="underline-animate">About</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="underline-animate">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -97,11 +89,15 @@
       >
         <div class="container mx-auto px-4">
           <header>
-            <h1 class="main-heading mb-4 text-4xl font-bold md:text-5xl">
-              Frontend Developer
+            <h1 class="main-heading mb-4 text-5xl font-medium md:text-6xl">
+              <span aria-hidden="true">&lt;</span>Web Development<span
+                aria-hidden="true"
+                >/&gt;</span
+              >
             </h1>
             <p class="mb-8 text-lg opacity-95 md:text-xl">
-              Crafting Accessible, Responsive, and Performant Web Experiences
+              Helping small businesses grow their online presence by crafting
+              accessible, responsive, and performant websites.
             </p>
           </header>
 
@@ -596,26 +592,6 @@
       </div>
     </footer>
 
-    <script>
-      // Mobile menu toggle
-      const menuToggle = document.querySelector(".nav__menu-toggle");
-      const navLinks = document.querySelector(".nav__links");
-
-      menuToggle.addEventListener("click", function () {
-        const isHidden = navLinks.classList.toggle("hidden");
-        this.setAttribute("aria-expanded", isHidden ? "false" : "true");
-        navLinks.classList.add("flex");
-      });
-
-      // add keyup event for spacebar/enter/
-      // Close menu when clicking a nav link
-      document.querySelectorAll(".nav__links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.toggle("hidden");
-          menuToggle.setAttribute("aria-expanded", "false");
-        });
-      });
-    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
