@@ -48,6 +48,8 @@
 
     /* color: ;
     background-color: ; */
+    background: url("/assets/grid-bg-body.svg");
+    background-repeat: repeat;
   }
 
   /* Set shorter line heights on headings and interactive elements */
@@ -122,6 +124,28 @@
 @layer components {
   .underline-animate {
     @apply relative font-medium text-blue-950 duration-300 ease-in-out after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-950 after:transition-transform hover:after:scale-x-100 focus:after:scale-x-100;
+  }
+
+  .tech__stack::before,
+  .tech__stack::after {
+    content: "";
+    @apply absolute top-0 bottom-0 flex w-8 items-center justify-center bg-black text-sm tracking-widest text-white opacity-70;
+
+    /* writing-mode and text-orientation aren’t in Tailwind by default */
+    writing-mode: vertical-lr;
+    border-left: 1px solid white;
+    /* text-orientation: mixed; */
+  }
+
+  .tech__stack::before {
+    content: "Skills";
+    left: 0; /* offset outside */
+    transform: rotate(180deg);
+  }
+
+  .tech__stack::after {
+    content: "Practices";
+    right: 0;
   }
 
   .tech__badge {

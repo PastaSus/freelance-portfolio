@@ -60,7 +60,7 @@
 
           <ul class="nav__links flex gap-4 text-lg">
             <li>
-              <a href="#home" class="underline-animate">Home</a>
+              <a href="#" class="underline-animate">Home</a>
             </li>
             <li>
               <a href="#projects" class="underline-animate">Projects</a>
@@ -91,22 +91,26 @@
       <section
         class="hero relative overflow-hidden bg-[#005A9C] py-15 text-center text-white"
       >
-        <div class="container mx-auto px-4 lg:grid lg:grid-cols-2">
-          <header>
+        <div class="container mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-12">
+          <header class="lg:grid lg:items-end">
             <h1 class="main-heading mb-4 text-5xl font-medium md:text-6xl">
               <span aria-hidden="true" class="text-gray-400">&lt;</span>Web
               Development<span aria-hidden="true" class="text-gray-400"
                 >/&gt;</span
               >
             </h1>
-            <p class="mb-8 text-lg font-light opacity-95 md:text-xl">
+            <p
+              class="0 text-lg font-light opacity-95 md:mx-auto md:max-w-145 md:text-xl lg:mb-0"
+            >
               Helping small businesses grow their online presence by crafting
               accessible, responsive, and performant websites.
             </p>
           </header>
 
+          <!-- <div> -->
+          <h2 class="hidden">Core Skills</h2>
           <ul
-            class="tech__stack mt-8 hidden flex-wrap justify-center gap-3 rounded-xl delay-400 md:flex md:border md:border-white md:bg-blue-500/20 md:py-12.5"
+            class="tech__stack mt-8 hidden flex-wrap justify-center gap-3 rounded-xl delay-400 md:relative md:mx-auto md:flex md:max-w-150 md:overflow-hidden md:border md:border-white md:bg-blue-500/20 md:p-8"
             aria-label="Core Skills and Practices"
           >
             <li class="tech__badge">HTML5</li>
@@ -119,15 +123,18 @@
             <li class="tech__badge">Performance Optimized</li>
           </ul>
 
-          <div class="container mx-auto flex">
+          <div class="container mx-auto flex lg:col-span-2">
             <a
               href="#"
-              class="cta mx-auto inline-block w-full rounded-full bg-blue-900 py-3 text-center text-slate-200 hover:bg-[hsl(225,67%,53%)] sm:w-1/2 md:mt-6"
+              class="cta mx-auto mt-8 inline-block w-full rounded-full border border-solid border-white bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 sm:w-1/2 md:mt-10 md:hover:bg-sky-900/0 lg:mt-0"
               >Work with Me</a
             >
           </div>
+          <!-- </div> -->
         </div>
       </section>
+
+      <section class="stats"></section>
 
       <!-- Projects Section -->
       <section
@@ -673,17 +680,21 @@
               <li>
                 <a
                   href="mailto:your.email@example.com"
-                  class="underline hover:text-white"
+                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
                   >Email me via Gmail</a
                 >
               </li>
               <li>
-                <a href="#" class="underline hover:text-white"
+                <a
+                  href="#"
+                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
                   >Visit My LinkedIn Profile</a
                 >
               </li>
               <li>
-                <a href="#" class="underline hover:text-white"
+                <a
+                  href="#"
+                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
                   >See My Projects On GitHub</a
                 >
               </li>
@@ -700,7 +711,7 @@
               href="https://www.frontendmentor.io/"
               target="_blank"
               rel="noopener noreferrer"
-              class="underline hover:text-white/80"
+              class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-0.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white/80 hover:after:scale-x-0"
             >
               Frontend Mentor </a
             >, coded by me.
