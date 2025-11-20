@@ -120,9 +120,9 @@
 }
 
 @layer components {
-  .underline-animate {
-    @apply relative font-medium text-blue-950 duration-300 ease-in-out after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-950 after:transition-transform hover:after:scale-x-100 focus:after:scale-x-100;
-  }
+  /* .underline-animate {
+    @apply relative duration-300 ease-in-out after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-950 after:transition-transform hover:after:scale-x-100 focus:after:scale-x-100;
+  } */
 
   .tech__stack::before,
   .tech__stack::after {
