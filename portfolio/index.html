@@ -123,6 +123,13 @@
                 <a
                   href="#contact"
                   class="underline-animate inline-block w-full py-1 font-medium text-blue-950 hover:underline"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="underline-animate inline-block w-full py-1 font-medium text-blue-950 hover:underline"
                   >Contact</a
                 >
               </li>
@@ -137,54 +144,62 @@
       <!-- Hero Section -->
       <!-- theres overflow hidden on hero idk if theres something overflowing remove later if no overflow -->
       <section
-        class="hero min-h-[70vh] bg-[url('/assets/images/hero-mobile.jpg')] bg-cover bg-no-repeat py-15 text-center text-white md:bg-[url('/assets/images/hero-desktop.jpg')]"
+        class="hero relative grid min-h-[90vh] items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/assets/images/hero-mobile.jpg')] bg-cover bg-center bg-no-repeat py-15 text-center text-white md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/assets/images/hero-desktop.jpg')]"
       >
-        <div class="container mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-12">
-          <header class="lg:grid lg:items-end">
-            <h1 class="main-heading mb-4 text-5xl font-medium md:text-6xl">
-              <span aria-hidden="true" class="text-gray-400">&lt;</span>Web
-              Development<span aria-hidden="true" class="text-gray-400"
-                >/&gt;</span
-              >
-            </h1>
-            <p
-              class="0 text-lg font-light opacity-95 md:mx-auto md:max-w-145 md:text-xl lg:mb-0"
-            >
-              Helping local service businesses and healthcare professionals grow
-              their online presence through modern, accessible, and fast
-              websites
-            </p>
-          </header>
-
-          <!-- <div> -->
-          <h2 class="hidden">Core Skills</h2>
-          <ul
-            class="tech__stack mt-8 hidden flex-wrap justify-center gap-3 rounded-xl delay-400 md:relative md:mx-auto md:flex md:max-w-150 md:overflow-hidden md:border md:border-white md:bg-blue-500/20 md:p-8 lg:mt-0"
-            aria-label="Core Skills and Practices"
+        <!-- Gradient overlay -->
+        <!-- <div
+          class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20"
+        ></div> -->
+        <div class="relative container mx-auto px-4">
+          <h1
+            class="main-heading mb-4 text-5xl font-bold text-blue-100 md:text-6xl"
           >
-            <li class="tech__badge">HTML5</li>
-            <li class="tech__badge">CSS3</li>
-            <li class="tech__badge">JavaScript</li>
-            <li class="tech__badge">SCSS/SASS</li>
+            <!--I build / Building ?-->
+            Creating web presence that drives growth and engages your audience
+          </h1>
 
-            <li class="tech__badge">TailwindCSS</li>
-            <li class="tech__badge">A11y/Accessbility</li>
-            <li class="tech__badge">Performance Optimized</li>
-          </ul>
-
-          <div class="container mx-auto flex lg:col-span-2">
+          <div class="container mx-auto flex">
             <a
               href="#contact"
-              class="cta mx-auto mt-8 inline-block w-full rounded-full border border-solid border-white bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 md:mt-10 md:hover:bg-sky-900/0 lg:mt-0"
+              class="cta mx-auto mt-8 inline-block w-1/2 rounded-full bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 md:mt-10 lg:mt-0"
               >Work with Me</a
             >
           </div>
-          <!-- </div> -->
         </div>
       </section>
 
       <!-- services im offering -->
-      <section class="what-i-do"></section>
+      <section class="services py-15">
+        <div class="grid min-h-[50vh] items-center text-center">
+          <h2
+            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+          >
+            Websites That Work as Hard as You Do
+          </h2>
+        </div>
+        <div class="text-start">
+          <!-- What I Do
+
+I leverage a modern stack focused on performance and maintainability:
+
+    Core Development: Expert use of HTML and JavaScript for robust, future-proof applications.
+
+    Styling & Design System: Rapid, utility-first styling using Tailwind CSS for responsive, elegant interfaces.
+
+    Accessibility (A11y): Prioritizing WCAG standards to ensure all users have access to your content.
+
+    Performance Optimization: Focusing on achieving top Lighthouse scores across performance, best practices, and SEO. -->
+          <h3 class="text-2xl">Turning Ideas Into Growth</h3>
+          <p class="mb-4 text-lg leading-relaxed text-slate-500">
+            Achieving sustainable digital growth requires careful attention to
+            critical areas such as speed and user experience. That's why I offer
+            specialized web development solutions tailored specifically to your
+            goals, aimed at delivering comfy user experiences that are fast and
+            accessible to everyone.
+          </p>
+        </div>
+        <div></div>
+      </section>
 
       <!-- Projects/Portfolio/Featured Projects Section something masonry looking?-->
       <section
