@@ -39,9 +39,7 @@
       >Skip to main content</a
     >
     <!-- Header -->
-    <header
-      class="header bg-white/35 shadow-sm backdrop-blur md:grid md:grid-cols-2"
-    >
+    <header class="header shadow-sm backdrop-blur md:grid md:grid-cols-2">
       <!-- <div class="text-center md:self-center"> -->
       <!-- <h2
           class="font-['Poppins',_'sans-serif'] text-3xl font-medium text-blue-950 md:text-4xl"
@@ -56,11 +54,11 @@
           class="nav relative z-3 mx-auto origin-top py-4 transition-transform duration-300 ease-in-out"
           aria-label="Main navigation"
         >
-          <div class="relative z-3 flex justify-between px-3">
+          <div class="relative z-3 flex items-center justify-between px-3">
             <a href="#" aria-label="Back to Home">
               <img
                 class="h-10 w-10"
-                src="./assets/images/logo-github.svg"
+                src="/assets/images/logo-github.svg"
                 alt=""
               />
             </a>
@@ -89,7 +87,7 @@
               </button>
               <a
                 href="#contact"
-                class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center text-slate-200 hover:bg-[hsl(225,67%,53%)] sm:w-1/2"
+                class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center text-slate-200 hover:bg-[hsl(225,67%,53%)]"
                 >Let's Talk</a
               >
             </div>
@@ -139,7 +137,7 @@
       <!-- Hero Section -->
       <!-- theres overflow hidden on hero idk if theres something overflowing remove later if no overflow -->
       <section
-        class="hero overflow-hidden bg-[#005A9C] py-15 text-center text-white"
+        class="hero min-h-[70vh] bg-[url('/assets/images/hero-mobile.jpg')] bg-cover bg-no-repeat py-15 text-center text-white md:bg-[url('/assets/images/hero-desktop.jpg')]"
       >
         <div class="container mx-auto px-4 lg:grid lg:grid-cols-2 lg:gap-12">
           <header class="lg:grid lg:items-end">
@@ -177,7 +175,7 @@
           <div class="container mx-auto flex lg:col-span-2">
             <a
               href="#contact"
-              class="cta mx-auto mt-8 inline-block w-full rounded-full border border-solid border-white bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 sm:w-1/2 md:mt-10 md:hover:bg-sky-900/0 lg:mt-0"
+              class="cta mx-auto mt-8 inline-block w-full rounded-full border border-solid border-white bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 md:mt-10 md:hover:bg-sky-900/0 lg:mt-0"
               >Work with Me</a
             >
           </div>
