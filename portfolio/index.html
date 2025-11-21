@@ -40,25 +40,18 @@
     >
     <!-- Header -->
     <header class="header shadow-sm backdrop-blur md:grid md:grid-cols-2">
-      <!-- <div class="text-center md:self-center"> -->
-      <!-- <h2
-          class="font-['Poppins',_'sans-serif'] text-3xl font-medium text-blue-950 md:text-4xl"
-        >
-          Aaron Cerezo
-        </h2>
-        <p class="text-lg tracking-widest md:text-2xl">Web Development</p> -->
-      <!-- </div> -->
-
       <div class="">
         <nav
           class="nav relative z-3 mx-auto origin-top py-4 transition-transform duration-300 ease-in-out"
           aria-label="Main navigation"
         >
-          <div class="relative z-3 flex items-center justify-between px-3">
+          <div
+            class="relative z-3 flex items-center justify-between gap-1 px-3"
+          >
             <a href="#" aria-label="Back to Home">
               <img
                 class="h-10 w-10"
-                src="/assets/images/logo-github.svg"
+                src="/src/assets/icons/logo-github.svg"
                 alt=""
               />
             </a>
@@ -144,7 +137,8 @@
       <!-- Hero Section -->
       <!-- theres overflow hidden on hero idk if theres something overflowing remove later if no overflow -->
       <section
-        class="hero relative grid min-h-[90vh] items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/assets/images/hero-mobile.jpg')] bg-cover bg-center bg-no-repeat py-15 text-center text-white md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/assets/images/hero-desktop.jpg')]"
+        class="hero relative grid min-h-[90vh] items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-mobile.jpg')] bg-cover bg-center bg-no-repeat py-15 text-center text-white md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-desktop.jpg')]"
+        aria-labelledby="main-heading"
       >
         <!-- Gradient overlay -->
         <!-- <div
@@ -152,10 +146,11 @@
         ></div> -->
         <div class="relative container mx-auto px-4">
           <h1
+            id="main-heading"
             class="main-heading mb-4 text-5xl font-bold text-blue-100 md:text-6xl"
           >
             <!--I build / Building ?-->
-            Creating web presence that drives growth and engages your audience
+            Creating web presence that drives growth for your business
           </h1>
 
           <div class="container mx-auto flex">
@@ -169,36 +164,340 @@
       </section>
 
       <!-- services im offering -->
-      <section class="services py-15">
-        <div class="grid min-h-[50vh] items-center text-center">
+      <section class="services py-15" aria-labelledby="services-heading">
+        <div class="">
+          <div class="grid min-h-[50vh] items-center px-3 text-center">
+            <h2
+              id="services-heading"
+              class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            >
+              Websites That Work as Hard as You Do
+            </h2>
+          </div>
+          <div class="bg-blue-950 px-3 py-10">
+            <div class="text-start">
+              <h3 class="text-2xl font-semibold text-blue-100">
+                Turning Ideas Into Growth
+              </h3>
+              <p class="mt-4 text-lg leading-relaxed text-blue-100">
+                Achieving sustainable digital growth means focusing on speed and
+                user experience. I provide web development solutions tailored to
+                your goals, delivering fast, accessible, and comfortable user
+                experiences for everyone.
+              </p>
+            </div>
+            <div class="mt-6 border-t border-t-blue-100">
+              <details class="group border-b border-b-blue-100">
+                <summary
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                >
+                  <h3 class="text-2xl font-medium text-blue-100">
+                    Accessibility & Structure
+                  </h3>
+                  <img src="" alt="" />
+                </summary>
+                <div class="mb-4">
+                  <h4 class="mb-4 text-blue-100">
+                    Adhering to strict standards to make sites universally
+                    usable and screen-reader compatible.
+                  </h4>
+                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
+                  <ul class="grid gap-1 text-blue-100">
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Semantic HTML Markup</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>ARIA</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Screen Reader Compatibility</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Alt Text for Images</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Meaningful Link Text</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Automated and Manual Accessibility audits</span>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group border-b border-b-blue-100">
+                <summary
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                >
+                  <h3 class="text-2xl font-medium text-blue-100">
+                    Performance & Development
+                  </h3>
+                  <img src="" alt="" />
+                </summary>
+                <div class="mb-4">
+                  <h4 class="mb-4 text-blue-100">
+                    I implement solid front-end foundations to ensure speed,
+                    efficiency, and scalability.
+                  </h4>
+                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
+                  <ul class="grid gap-1 text-blue-100">
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Web Performance Optimization </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5 self-start"
+                      />
+                      <span>
+                        Utility-first CSS for responsive design and rapid
+                        development
+                      </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Vanilla JavaScript </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Code Maintainability</span>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group border-b border-b-blue-100">
+                <summary
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                >
+                  <h3 class="text-2xl font-medium text-blue-100">
+                    Leveraging AI
+                  </h3>
+                  <img src="" alt="" />
+                </summary>
+                <div class="mb-4">
+                  <h4 class="mb-4 text-blue-100">
+                    Integrating AI tools into the workflow to ensure rapid
+                    prototyping, higher code quality, and faster delivery
+                    timelines.
+                  </h4>
+                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
+                  <ul class="grid gap-1 text-blue-100">
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Accelerated Prototyping </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Code Review & Refinement </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Enhanced Accessibility Auditing</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>SEO and Performance Analysis</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Documentation & Explanations</span>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+              <details class="group border-b border-b-blue-100">
+                <summary
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                >
+                  <h3 class="text-2xl font-medium text-blue-100">
+                    Ongoing Services
+                  </h3>
+                  <img src="" alt="" />
+                </summary>
+                <div class="mb-4">
+                  <h4 class="mb-4 text-blue-100">
+                    Ensuring your digital presence remains fast, accessible, and
+                    up-to-date long after the initial launch.
+                  </h4>
+                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
+                  <ul class="grid gap-1 text-blue-100">
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Continuous Performance Monitoring </span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Accessibility Maintenance</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Codebase Maintenance</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-lg">
+                      <img
+                        src="/src/assets/icons/checkmark-outline.svg"
+                        alt=""
+                        class="h-5 w-5"
+                      />
+                      <span>Feature Scaling & Iteration</span>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="technologies py-15"
+        aria-labelledby="technologies-heading"
+      >
+        <div class="grid min-h-[50vh] items-center px-3 text-center">
           <h2
+            id="technologies-heading"
             class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
           >
-            Websites That Work as Hard as You Do
+            Tech & Tools that i use
           </h2>
         </div>
-        <div class="text-start">
-          <!-- What I Do
-
-I leverage a modern stack focused on performance and maintainability:
-
-    Core Development: Expert use of HTML and JavaScript for robust, future-proof applications.
-
-    Styling & Design System: Rapid, utility-first styling using Tailwind CSS for responsive, elegant interfaces.
-
-    Accessibility (A11y): Prioritizing WCAG standards to ensure all users have access to your content.
-
-    Performance Optimization: Focusing on achieving top Lighthouse scores across performance, best practices, and SEO. -->
-          <h3 class="text-2xl">Turning Ideas Into Growth</h3>
-          <p class="mb-4 text-lg leading-relaxed text-slate-500">
-            Achieving sustainable digital growth requires careful attention to
-            critical areas such as speed and user experience. That's why I offer
-            specialized web development solutions tailored specifically to your
-            goals, aimed at delivering comfy user experiences that are fast and
-            accessible to everyone.
-          </p>
+        <div class="tech-grid grid grid-cols-2 bg-blue-950 px-3 py-10">
+          <!--  -->
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">HTML5</figcaption>
+            <img
+              src="src/assets/icons/HTML5.svg"
+              alt="HTML5 logo"
+              class="h-10 w-10"
+            />
+          </figure>
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">Tailwind</figcaption>
+            <img
+              src="src/assets/icons/Tailwind-CSS.svg"
+              alt="Tailwind logo"
+              class="h-10 w-10"
+            />
+          </figure>
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">Javascript</figcaption>
+            <img
+              src="src/assets/icons/JavaScript.svg"
+              alt="JavaScript logo"
+              class="h-10 w-10"
+            />
+          </figure>
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">NodeJS</figcaption>
+            <img
+              src="src/assets/icons/Node.js.svg"
+              alt="NodeJS logo"
+              class="h-10 w-10"
+            />
+          </figure>
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">Vite</figcaption>
+            <img
+              src="src/assets/icons/vite.js.svg"
+              alt="Vite logo"
+              class="h-10 w-10"
+            />
+          </figure>
+          <figure
+            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+          >
+            <figcaption class="text-lg text-blue-100">Soon</figcaption>
+            <img src="" alt="" class="h-10 w-10" />
+          </figure>
         </div>
-        <div></div>
       </section>
 
       <!-- Projects/Portfolio/Featured Projects Section something masonry looking?-->

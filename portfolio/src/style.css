@@ -101,6 +101,10 @@
     scroll-margin-block: 5ex;
   }
 
+  summary::marker {
+    content: "";
+  }
+
   /* ------- RESET ABOVE--------- */
 
   /* Reduced motion for accessibility*/
