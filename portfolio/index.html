@@ -164,9 +164,9 @@
       </section>
 
       <!-- services im offering -->
-      <section class="services py-15" aria-labelledby="services-heading">
+      <section class="services pt-15" aria-labelledby="services-heading">
         <div class="">
-          <div class="grid min-h-[50vh] items-center px-3 text-center">
+          <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
             <h2
               id="services-heading"
               class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
@@ -427,11 +427,12 @@
         </div>
       </section>
 
+      <!-- tools/tech -->
       <section
-        class="technologies py-15"
+        class="technologies pt-15"
         aria-labelledby="technologies-heading"
       >
-        <div class="grid min-h-[50vh] items-center px-3 text-center">
+        <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
           <h2
             id="technologies-heading"
             class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
@@ -502,417 +503,425 @@
 
       <!-- Projects/Portfolio/Featured Projects Section something masonry looking?-->
       <section
-        class="projects container mx-auto px-4 py-20"
-        id="projects"
-        aria-label="Portfolio Projects"
+        class="projects mx-auto pt-15"
+        aria-labelledby="projects-heading"
       >
-        <!-- turn to header tag? -->
-        <header class="projects__header mb-12 text-center">
+        <div
+          class="projects__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
+        >
           <h2
-            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            id="projects-heading"
+            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
           >
-            Landing Page Projects
+            Works i've done so far
           </h2>
-          <p class="text-lg text-slate-500">
-            Showcasing modern, accessible, and responsive landing pages.
-          </p>
-        </header>
+        </div>
 
         <div
-          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+          class="projects__grid grid grid-cols-1 gap-8 bg-blue-100 px-3 py-15 md:grid-cols-2 xl:grid-cols-3"
         >
           <!-- Project 1 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/people-outline.svg"
-                class="w-25"
-                alt=""
-              />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                focusable="false"
+                aria-hidden="true"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+              </svg>
             </div>
 
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
                 Huddle Landing With Curved Sections
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 Single-page SaaS-style landing page challenge, built with curved
                 section dividers, and responsive layouts.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">CSS</li>
-                <li class="project__tech-tag">A11Y</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://pastasus.github.io/huddle-landing-page-with-curved-sections-master/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of huddle landing page with curved sections"
                 >
-                <a
-                  href="https://github.com/PastaSus/huddle-landing-page-with-curved-sections-master"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Project 2 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/bookmarks-outline.svg"
-                alt=""
-                class="w-25"
-              />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                focusable="false"
+                aria-hidden="true"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
                 Bookmark Landing
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 Multi-section product landing page with a clean, responsive
                 design, interactive tabbed features, and accessible navigation.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">Tailwind CSS</li>
-                <li class="project__tech-tag">JS</li>
-                <li class="project__tech-tag">A11Y</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://bookmark-landing-page-master-b1.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of bookmark landing page"
                 >
-                <a
-                  href="https://github.com/PastaSus/bookmark-landing-page-master"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Project 3 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/aperture-outline.svg"
-                alt=""
-                class="w-25"
-              />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
                 Loopstudios Landing
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 Agency-style landing page with immersive hero section,
                 responsive image grids, and accessible navigation patterns.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">SCSS</li>
-                <li class="project__tech-tag">JS</li>
-                <li class="project__tech-tag">A11Y</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://loopstudios-landing-page-main-ac.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of loopstudios landing page"
                 >
-                <a
-                  href="https://github.com/PastaSus/loopstudios-landing-page-main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Project4 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/newspaper-outline.svg"
-                alt=""
-                class="w-25"
-              />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 fill-blue-100 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192"
+                />
+                <path
+                  d="M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
                 News Homepage
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 News-style homepage layout challenge, featuring a prominent hero
                 article, category listings, and responsive grid-based design.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">CSS</li>
-                <li class="project__tech-tag">JS</li>
-                <li class="project__tech-tag">A11y</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://pastasus.github.io/news-homepage-main/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of news homepage"
                 >
-                <a
-                  href="https://github.com/PastaSus/news-homepage-main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Project 5 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img src="/assets/images/bed-outline.svg" alt="" class="w-25" />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
                 Room Homepage
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 Furniture store landing page with an interactive hero carousel,
                 responsive breakpoints, and accessible navigation.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">SCSS</li>
-                <li class="project__tech-tag">JS</li>
-                <li class="project__tech-tag">A11y</li>
-              </ul>
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://room-homepage-master-beta-ten.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of room homepage"
                 >
-                <a
-                  href="https://github.com/PastaSus/room-homepage-master"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
 
           <!-- Project 6 -->
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/restaurant-outline.svg"
-                alt=""
-                class="w-25"
-              />
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M57.49 47.74l368.43 368.43a37.28 37.28 0 010 52.72h0a37.29 37.29 0 01-52.72 0l-90-91.55a32 32 0 01-9.2-22.43v-5.53a32 32 0 00-9.52-22.78l-11.62-10.73a32 32 0 00-29.8-7.44h0a48.53 48.53 0 01-46.56-12.63l-85.43-85.44C40.39 159.68 21.74 83.15 57.49 47.74z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M400 32l-77.25 77.25A64 64 0 00304 154.51v14.86a16 16 0 01-4.69 11.32L288 192M320 224l11.31-11.31a16 16 0 0111.32-4.69h14.86a64 64 0 0045.26-18.75L480 112M440 72l-80 80M200 368l-99.72 100.28a40 40 0 01-56.56 0h0a40 40 0 010-56.56L128 328"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
-                Omni-Food Landing
+                Omni-Food
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
-                Project undergoing maintenance...
+              <p class="mb-4 leading-relaxed text-slate-600">
+                A smart meal-planning platform offering personalized nutrition
+                and easy-to-follow food recommendations. Currently undergoing
+                maintenance.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">CSS</li>
-                <li class="project__tech-tag">JavaScript</li>
-                <li class="project__tech-tag">A11y</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://pastasus.github.io/omnifood/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of Omni-food"
                 >
-                <a
-                  href="https://github.com/PastaSus/omnifood/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
+                  <span>Live Site</span>
+                </a>
               </div>
             </div>
           </article>
-        </div>
-      </section>
 
-      <!-- this is more projects/portfolio i guess? -->
-      <section class="multi-page-landing container mx-auto px-4 py-20">
-        <!-- turn to header tag? space-tourism-website-->
-        <header class="projects__header mb-12 text-center">
-          <h2
-            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
-          >
-            Multi-Page Landing Projects
-          </h2>
-          <p class="text-lg text-slate-500">
-            Multi-page landing projects with accessible design and performance
-            in mind.
-          </p>
-        </header>
-
-        <div
-          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
-        >
-          <article class="project__card">
-            <div class="project__image">
-              <img
-                src="/assets/images/planet-outline.svg"
-                alt=""
-                class="w-25"
-              />
+          <!-- Project 7 -->
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <circle
+                  cx="256"
+                  cy="256"
+                  r="160"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+              </svg>
             </div>
-            <div class="project__content p-6 md:grid">
+            <div class="project__content md:grid">
               <h3
                 class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
               >
-                Space Tourism Website
+                Space Tourism
               </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
+              <p class="mb-4 leading-relaxed text-slate-600">
                 Immersive multi-page space tourism site featuring accessible tab
                 navigation, fully responsive layouts, and semantic HTML for
                 performance.
               </p>
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">HTML</li>
-                <li class="project__tech-tag">TailwindCSS</li>
-                <li class="project__tech-tag">JavaScript</li>
-              </ul>
+
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
                 <a
                   href="https://space-tourism-website-main-ac.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="project__demo"
-                  >Live Demo</a
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of space tourism"
                 >
-                <a
-                  href="https://github.com/PastaSus/space-tourism-website-main"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__source"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- other small projects ignore this -->
-      <section class="others container mx-auto px-4 py-20">
-        <!-- turn to header tag? -->
-        <header class="projects__header mb-12 text-center">
-          <h2
-            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
-          >
-            Other Projects
-          </h2>
-          <!-- maybe add a description? -->
-          <p class="text-lg text-slate-500">Mini projects and more.</p>
-        </header>
-
-        <div
-          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
-        >
-          <article class="project__card">
-            <div class="project__image">
-              <img src="/assets/images/logo-github.svg" alt="" class="w-25" />
-            </div>
-
-            <div class="project__content p-6 md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Check Out My GitHub!
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-500">
-                Explore my full collection of projects on GitHub, from
-                multi-page and single-page landing pages to interactive UI
-                components and some mini web apps too!
-              </p>
-
-              <ul
-                class="project__tech mb-4 flex flex-wrap gap-2"
-                aria-label="Technologies used"
-              >
-                <li class="project__tech-tag">Others</li>
-              </ul>
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://github.com/PastaSus?tab=repositories"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo"
-                >
-                  GitHub
+                  <span>Live Site</span>
                 </a>
               </div>
             </div>
@@ -920,11 +929,29 @@
         </div>
       </section>
 
+      <!-- about -testimonials also here -->
+      <section class="about container mx-auto px-4 py-20">
+        <!-- turn to header tag? -->
+        <div class="about__header mb-12 text-center">
+          <h2
+            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+          >
+            About
+          </h2>
+          <!-- maybe add a description? -->
+          <!-- <p class="text-lg text-slate-500">Mini projects and more.</p> -->
+        </div>
+
+        <div
+          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
+        ></div>
+      </section>
+
       <!-- About/ why they should work with me include here testimonials apparently or separate idk-->
-      <section class="about"></section>
+      <section class="---"></section>
 
       <!-- cta not really sure since we have it in hero already?-->
-      <section class="cta"></section>
+      <section class="---"></section>
     </main>
 
     <!-- Footer (social links,contact info)-->
@@ -938,18 +965,7 @@
               landing pages that perform beautifully on any device.
             </p>
           </div>
-          <div class="footer__section">
-            <h3 class="mb-4 text-lg font-semibold">Technologies/Core Skills</h3>
-            <ul class="space-y-1 leading-relaxed text-white/80">
-              <li>HTML5</li>
-              <li>CSS3/SASS</li>
-              <li>JavaScript</li>
-              <li>TailwindCSS</li>
-              <li>WCAG Compliance</li>
-              <li>Responsive Design</li>
-              <li>Performance Optimization</li>
-            </ul>
-          </div>
+
           <div class="footer__section" id="contact">
             <h3 class="mb-4 text-lg font-semibold">Contact</h3>
 
