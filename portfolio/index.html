@@ -39,7 +39,7 @@
       >Skip to main content</a
     >
     <!-- Header -->
-    <header class="header shadow-sm backdrop-blur md:grid md:grid-cols-2">
+    <!-- <header class="header shadow-sm backdrop-blur md:grid md:grid-cols-2">
       <div class="">
         <nav
           class="nav relative z-3 mx-auto origin-top py-4 transition-transform duration-300 ease-in-out"
@@ -63,30 +63,33 @@
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
+                  class="ionicon h-8 w-8"
                   aria-hidden="true"
                   focusable="false"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-8 w-8"
+                  viewBox="0 0 512 512"
                 >
                   <path
+                    fill="none"
+                    stroke="currentColor"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M80 160h352M80 256h352M80 352h352"
                   />
                 </svg>
               </button>
               <a
-                href="#contact"
+                href="https://calendly.com/aaroncerezo"
+                rel="noopener noreferrer"
+                aria-label=""
+                target="_blank"
                 class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)]"
                 >Let's Talk</a
               >
             </div>
           </div>
 
-          <!-- Absolute menu for sliding -->
+          
           <div
             class="nav-links absolute right-0 left-0 hidden -translate-y-50 transition-transform duration-500 ease-in-out"
           >
@@ -130,6 +133,132 @@
           </div>
         </nav>
       </div>
+    </header> -->
+
+    <!-- Above: old header
+          Below: new header
+          nav should close if a link is clicked in mobile 
+    -->
+
+    <!-- Header -->
+    <header
+      class="header relative md:flex md:items-center md:justify-between md:px-3"
+    >
+      <div class="header__container flex justify-between px-3 py-6 md:p-0">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="header__logo relative max-w-10 md:max-w-12"
+          aria-label="Back to homepage"
+        >
+          <img
+            src="src/assets/icons/logo-github.svg"
+            class="h-10 w-10"
+            alt=""
+          />
+        </a>
+        <div class="flex items-center gap-2">
+          <a
+            href="https://calendly.com/aaroncerezo"
+            rel="noopener noreferrer"
+            aria-label=""
+            target="_blank"
+            class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)] md:hidden"
+            >Let's Talk</a
+          >
+          <!-- Mobile Nav Toggle -->
+          <button
+            class="nav__open cursor-pointer md:hidden"
+            aria-label="Open navigation menu"
+            aria-controls="mobileNav"
+            aria-expanded="false"
+            type="button"
+          >
+            <img
+              src="src/assets/icons/menu-outline.svg"
+              alt=""
+              class="h-10 w-10"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <nav
+        class="nav fixed top-0 right-0 z-10 h-dvh w-[68.5dvw] translate-x-full bg-white opacity-0 transition-transform duration-700 ease-in-out md:relative md:h-auto md:w-auto md:translate-x-0 md:opacity-100"
+        id="mobileNav"
+        hidden
+      >
+        <div class="mt-6 flex px-3 md:hidden">
+          <button
+            class="nav__close ml-auto cursor-pointer md:hidden"
+            aria-label="Close navigation menu"
+            aria-controls="mobileNav"
+            type="button"
+          >
+            <img
+              src="src/assets/icons/close-outline.svg"
+              alt=""
+              class="h-10 w-10"
+            />
+          </button>
+        </div>
+
+        <ul
+          class="nav__list flex flex-col gap-7 px-5 pr-0 tracking-widest text-blue-950 md:flex-row md:gap-3 md:py-0 md:pl-0"
+        >
+          <li class="nav__item">
+            <a
+              href="#services"
+              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+            >
+              <!-- <span class="nav__index font-bold" aria-hidden="true">01</span> -->
+              <span class="">Services</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#technologies"
+              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+            >
+              <span class="">Technologies</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#projects"
+              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+            >
+              <span class="">Portfolio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#about"
+              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+            >
+              <span class="">About</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#contacts"
+              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+            >
+              <span class="">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <a
+        href="https://calendly.com/aaroncerezo"
+        rel="noopener noreferrer"
+        aria-label=""
+        target="_blank"
+        class="cta hidden rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)] md:inline-block"
+        >Let's Talk</a
+      >
     </header>
 
     <!-- Main Content -->
@@ -139,6 +268,7 @@
       <section
         class="hero relative grid min-h-[90vh] items-center bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-mobile.jpg')] bg-cover bg-center bg-no-repeat py-15 text-center text-white md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-desktop.jpg')]"
         aria-labelledby="main-heading"
+        id="hero"
       >
         <!-- Gradient overlay -->
         <!-- <div
@@ -155,8 +285,10 @@
 
           <div class="container mx-auto flex">
             <a
-              href="#contact"
-              class="cta mx-auto mt-8 inline-block w-1/2 rounded-full bg-sky-900 py-3 text-center font-medium text-slate-200 hover:bg-sky-700 md:mt-10 lg:mt-0"
+              href="https://calendly.com/aaroncerezo"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="cta mx-auto mt-8 inline-block w-1/2 rounded-full bg-[hsl(225,67%,53%)] py-3 text-center font-medium text-slate-200 hover:bg-blue-900 md:mt-10 lg:mt-0"
               >Work with Me</a
             >
           </div>
@@ -164,7 +296,11 @@
       </section>
 
       <!-- services im offering -->
-      <section class="services pt-15" aria-labelledby="services-heading">
+      <section
+        class="services pt-15"
+        aria-labelledby="services-heading"
+        id="services"
+      >
         <div class="">
           <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
             <h2
@@ -430,6 +566,7 @@
       <!-- tools/tech -->
       <section
         class="technologies pt-15"
+        id="technologies"
         aria-labelledby="technologies-heading"
       >
         <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
@@ -504,6 +641,7 @@
       <!-- Projects/Portfolio/Featured Projects Section something masonry looking?-->
       <section
         class="projects mx-auto pt-15"
+        id="projects"
         aria-labelledby="projects-heading"
       >
         <div
@@ -925,17 +1063,128 @@
               </div>
             </div>
           </article>
+
+          <!-- Project 8 -->
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
+                />
+              </svg>
+            </div>
+            <div class="project__content md:grid">
+              <h3
+                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
+              >
+                Speous
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-600">
+                Personal portfolio showcasing creative projects and UI design
+              </p>
+
+              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                <a
+                  href="https://Speous.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of loopstudios landing page"
+                >
+                  <span>Live Site</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="project__card md:grid">
+            <div
+              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-20 w-20 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
+                />
+              </svg>
+            </div>
+            <div class="project__content md:grid">
+              <h3
+                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
+              >
+                RG Collections
+              </h3>
+              <p class="mb-4 leading-relaxed text-slate-600">
+                Trinkets/Accessories website for a small business
+              </p>
+
+              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                <a
+                  href="https://rg-collections.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                  aria-label="Live site of loopstudios landing page"
+                >
+                  <span>Live Site</span>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
       <!-- about -testimonials also here -->
-      <section class="about mx-auto pt-15">
+      <section
+        class="about mx-auto pt-15"
+        aria-labelledby="about-heading"
+        id="about"
+      >
         <!-- turn to header tag? -->
         <div
           class="about__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
         >
           <h2
             class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            id="about-heading"
           >
             A good website doesn’t just look great—it works great for everyone.
           </h2>
@@ -1044,12 +1293,17 @@
       </section>
 
       <!-- cta not really sure since we have it in hero already?-->
-      <section class="closing-cta mx-auto pt-15">
+      <section
+        class="closing-cta mx-auto pt-15"
+        aria-labelledby="closing-cta-heading"
+        id="cta"
+      >
         <div
           class="closing-cta__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
         >
           <h2
             class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            id="closing-cta-heading"
           >
             Better results,<br />
             made simple.
@@ -1088,13 +1342,15 @@
     <footer class="footer bg-[#0f172a] py-12 text-white" id="footer">
       <div class="container mx-auto px-4">
         <div class="footer__content mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div class="footer__section" id="about">
-            <h3 class="mb-4 text-lg font-semibold">Aaron Cerezo</h3>
-            <p class="mb-3 leading-relaxed text-white/80">
-              Bringing ideas to life with modern, accessible, and responsive
-              landing pages that perform beautifully on any device.
+          <div class="footer__section" id="footer-about">
+            <h3 class="mb-4 text-lg font-semibold text-blue-100">
+              Aaron Cerezo
+            </h3>
+            <p class="mb-3 leading-relaxed text-blue-100/80">
+              Building simple, accessible web experiences for growing
+              businesses.
             </p>
-            <p class="flex items-center">
+            <p class="flex items-center text-blue-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ionicon h-6 w-6 fill-blue-100"
@@ -1121,16 +1377,16 @@
             </p>
           </div>
 
-          <div class="footer__section" id="contact">
-            <h3 class="mb-4 text-lg font-semibold">Contact</h3>
+          <div class="footer__section" id="contacts">
+            <h3 class="mb-4 text-lg font-semibold text-blue-100">Contact</h3>
 
             <!-- use pseudo elements for the links then scale-x removed on hover -->
             <ul
-              class="mb-3 flex items-center gap-4 leading-relaxed text-white/80"
+              class="mb-3 flex items-center gap-4 leading-relaxed text-blue-100/80"
             >
               <li>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=aaronjames318@gmail.com&su=Hello&body=Hi"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Email Aaron via Gmail"
@@ -1216,68 +1472,56 @@
               </li>
             </ul>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
-              target="_blank"
+              href="https://calendly.com/aaroncerezo"
               rel="noopener noreferrer"
+              target="_blank"
               aria-label="Book a call through calendly"
               class="relative inline-block rounded-full border border-blue-100 px-6 py-2 font-medium text-blue-100 hover:bg-blue-100 hover:text-blue-950 focus:bg-blue-100 focus:text-blue-950"
               >Book a call</a
             >
           </div>
 
-          <div class="footer__section" id="contact">
-            <h3 class="mb-4 text-lg font-semibold">Quick Links</h3>
+          <div class="footer__section" id="quick-links">
+            <h3 class="mb-4 text-lg font-semibold text-blue-100">
+              Quick Links
+            </h3>
 
             <!-- use pseudo elements for the links then scale-x removed on hover -->
-            <ul class="flex flex-col gap-2 leading-relaxed text-white/80">
+            <ul class="flex flex-col gap-2 leading-relaxed text-blue-100/80">
               <li>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
-                  target="_blank"
+                  href="#services"
                   rel="noopener noreferrer"
                   aria-label="Email Aaron via Gmail"
-                  class="relative inline-block"
+                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
                   >Services</a
                 >
               </li>
 
               <li>
                 <a
-                  href="https://www.linkedin.com/in/aaron-cerezo-609938241/"
-                  target="_blank"
+                  href="#projects"
                   rel="noopener noreferrer"
                   aria-label="Visit Aaron's LinkedIn"
-                  class="relative inline-block"
+                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
                   >Portfolio</a
                 >
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/aaronj.cer/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Contact Aaron via Instagram"
-                  class="relative inline-block"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/PastaSus?tab=repositories"
-                  target="_blank"
+                  href="#about"
                   aria-label="Checkout Aaron's project on GitHub"
                   rel="noopener noreferrer"
-                  class="relative inline-block"
+                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="https://github.com/PastaSus?tab=repositories"
-                  target="_blank"
+                  href="#technologies"
                   aria-label="Checkout Aaron's project on GitHub"
                   rel="noopener noreferrer"
-                  class="relative inline-block"
+                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
                   >Technologies</a
                 >
               </li>
