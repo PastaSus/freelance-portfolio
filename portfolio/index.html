@@ -80,7 +80,7 @@
               </button>
               <a
                 href="#contact"
-                class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center text-slate-200 hover:bg-[hsl(225,67%,53%)]"
+                class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)]"
                 >Let's Talk</a
               >
             </div>
@@ -156,7 +156,7 @@
           <div class="container mx-auto flex">
             <a
               href="#contact"
-              class="cta mx-auto mt-8 inline-block w-1/2 rounded-full bg-sky-900 py-3 text-center text-slate-200 hover:bg-sky-700 md:mt-10 lg:mt-0"
+              class="cta mx-auto mt-8 inline-block w-1/2 rounded-full bg-sky-900 py-3 text-center font-medium text-slate-200 hover:bg-sky-700 md:mt-10 lg:mt-0"
               >Work with Me</a
             >
           </div>
@@ -853,8 +853,7 @@
               </h3>
               <p class="mb-4 leading-relaxed text-slate-600">
                 A smart meal-planning platform offering personalized nutrition
-                and easy-to-follow food recommendations. Currently undergoing
-                maintenance.
+                and easy-to-follow food recommendations.
               </p>
 
               <div class="project__links flex flex-wrap gap-3 md:mt-auto">
@@ -930,39 +929,195 @@
       </section>
 
       <!-- about -testimonials also here -->
-      <section class="about container mx-auto px-4 py-20">
+      <section class="about mx-auto pt-15">
         <!-- turn to header tag? -->
-        <div class="about__header mb-12 text-center">
-          <h2
-            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
-          >
-            About
-          </h2>
-          <!-- maybe add a description? -->
-          <!-- <p class="text-lg text-slate-500">Mini projects and more.</p> -->
-        </div>
-
         <div
-          class="projects__grid mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3"
-        ></div>
+          class="about__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
+        >
+          <h2
+            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+          >
+            A good website doesn’t just look great—it works great for everyone.
+          </h2>
+        </div>
+        <div class="bg-blue-100 px-3 py-15">
+          <div class="mb-4">
+            <h3 class="mb-3 text-2xl font-semibold text-blue-950">
+              My Approach & Values
+            </h3>
+            <p class="leading-relaxed text-slate-600">
+              A web developer who builds clean, functional, and accessible
+              websites with a focus on clarity and usability. I rely on proven
+              UI patterns and thoughtful layout decisions to ensure every
+              website works smoothly and looks consistent across all devices.
+            </p>
+          </div>
+          <div class="mb-4">
+            <h3 class="mb-3 text-2xl font-semibold text-blue-950">
+              Expectations when working with me
+            </h3>
+            <p class="mb-3 leading-relaxed text-slate-600">
+              <!-- I believe successful projects come from clear communication and
+              steady collaboration. -->
+              I believe successful projects come from clear communication,
+              steady updates, and building with purpose—so you always know
+              what’s happening and why each decision is made.
+            </p>
+            <ul class="grid list-disc gap-1 pl-6 text-lg text-slate-600">
+              <li>Transparent process from discovery to delivery</li>
+              <li>Consistent updates so you always know what’s happening</li>
+              <li>
+                Attention to detail in layout, responsiveness, and accessibility
+              </li>
+              <li>Honest feedback and guidance based on best practices</li>
+              <li>Long-term support, even after launch</li>
+            </ul>
+          </div>
+          <div class="">
+            <h3 class="mb-4 text-2xl font-semibold text-blue-950">
+              The Results Speak. So Do My Clients.
+            </h3>
+
+            <div class="grid gap-3">
+              <figure
+                class="grid border-2 border-slate-500 bg-blue-950 p-6 text-blue-100"
+              >
+                <img
+                  src="src/assets/images/sp-logo.avif"
+                  alt="Company Logo"
+                  class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
+                  loading="lazy"
+                />
+                <blockquote class="mb-4 text-center">
+                  I can tell that Aaron is passionate about every project he
+                  works on. He communicates well, delivers timely updates, and
+                  truly cares about the outcome. As a designer myself, I’m very
+                  happy with how the website turned out.
+                </blockquote>
+                <figcaption class="testimonial-author flex items-center gap-3">
+                  <img
+                    src="src/assets/images/jairus-pfp.jpg"
+                    alt="profile picture of jairus aquino"
+                    class="h-16 w-16 rounded-full border border-slate-300"
+                    loading="lazy"
+                  />
+                  <div>
+                    <p class="font-semibold">Jairus Aquino</p>
+                    <p class="text-sm">Creative freelancer, Speous</p>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure
+                class="grid border-2 border-slate-500 bg-blue-950 p-6 text-blue-100"
+              >
+                <img
+                  src="src/assets/images/rg-logo.png"
+                  alt="Company Logo"
+                  class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
+                  loading="lazy"
+                />
+                <blockquote class="mb-4 text-center">
+                  Working with Aaron to create a website for RG collections - a
+                  cozy little shop specializing in trinkets, toys, and unique
+                  gifts was an absolute pleasure and a resounding success. As a
+                  small business focused on unique, curated items, the look and
+                  feel of our online presence is just as important as the
+                  products themselves. I couldn't be happier with the result!
+                </blockquote>
+                <figcaption class="testimonial-author flex items-center gap-3">
+                  <img
+                    src="src/assets/images/rona-pfp.jpg"
+                    alt="Profile picture of Rona Galleno"
+                    class="h-16 w-16 rounded-full border border-slate-300"
+                    loading="lazy"
+                  />
+                  <div>
+                    <p class="font-semibold">Rona Galleno</p>
+                    <p class="text-sm">Small business owner, RGcollections</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- About/ why they should work with me include here testimonials apparently or separate idk-->
-      <section class="---"></section>
-
       <!-- cta not really sure since we have it in hero already?-->
-      <section class="---"></section>
+      <section class="closing-cta mx-auto pt-15">
+        <div
+          class="closing-cta__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
+        >
+          <h2
+            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+          >
+            Better results,<br />
+            made simple.
+          </h2>
+        </div>
+        <div class="bg-blue-100 px-3 py-15">
+          <div
+            class="cta-card grid h-100 content-between justify-items-center bg-blue-950 p-8 text-center"
+          >
+            <a href="#" aria-label="Back to Home" class="">
+              <img
+                class="h-20 w-20"
+                src="/src/assets/icons/logo-github.svg"
+                alt=""
+              />
+            </a>
+            <h3 class="text-3xl font-semibold text-blue-100">
+              Keep your customers engaged, the simple way.
+            </h3>
+
+            <p class="text-blue-100">
+              Let’s chat and bring your ideas to life.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block w-full rounded-full border-2 border-blue-100 px-6 py-2 font-medium text-blue-100 hover:bg-blue-100 hover:text-blue-950"
+              >Book a call through Calendly</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer (social links,contact info)-->
-    <footer class="footer mt-20 bg-[#0f172a] py-12 text-white">
+    <!-- Footer (social links,contact info) what else?-->
+    <footer class="footer bg-[#0f172a] py-12 text-white" id="footer">
       <div class="container mx-auto px-4">
         <div class="footer__content mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="footer__section" id="about">
-            <h3 class="mb-4 text-lg font-semibold">About</h3>
-            <p class="leading-relaxed text-white/80">
+            <h3 class="mb-4 text-lg font-semibold">Aaron Cerezo</h3>
+            <p class="mb-3 leading-relaxed text-white/80">
               Bringing ideas to life with modern, accessible, and responsive
               landing pages that perform beautifully on any device.
+            </p>
+            <p class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-6 w-6 fill-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <circle
+                  cx="256"
+                  cy="96"
+                  r="64"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M272 164a9 9 0 00-9-9h-14a9 9 0 00-9 9v293.56a32.09 32.09 0 002.49 12.38l10.07 24a3.92 3.92 0 006.88 0l10.07-24a32.09 32.09 0 002.49-12.38z"
+                />
+                <circle cx="280" cy="72" r="24" />
+              </svg>
+              <span>Available during GMT+8 business hours.</span>
             </p>
           </div>
 
@@ -970,24 +1125,140 @@
             <h3 class="mb-4 text-lg font-semibold">Contact</h3>
 
             <!-- use pseudo elements for the links then scale-x removed on hover -->
-            <ul class="flex flex-col gap-2 leading-relaxed text-white/80">
+            <ul
+              class="mb-3 flex items-center gap-4 leading-relaxed text-white/80"
+            >
               <li>
                 <a
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
                   target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Email Aaron via Gmail"
-                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
-                  >Email me via Gmail</a
+                  class="relative inline-block"
                 >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon h-10 w-10 fill-blue-100"
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 512 512"
+                  >
+                    <rect
+                      x="48"
+                      y="96"
+                      width="416"
+                      height="320"
+                      rx="40"
+                      ry="40"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                      d="M112 160l144 112 144-112"
+                    />
+                  </svg>
+                </a>
               </li>
+
               <li>
                 <a
                   href="https://www.linkedin.com/in/aaron-cerezo-609938241/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Visit Aaron's LinkedIn"
-                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
-                  >Visit My LinkedIn Profile</a
+                  class="relative inline-block"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ionicon h-10 w-10 fill-blue-100"
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com/aaronj.cer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact Aaron via Instagram"
+                  class="relative inline-block"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    class="ionicon h-10 w-10 fill-blue-100"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                    />
+                    <path
+                      d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Book a call through calendly"
+              class="relative inline-block rounded-full border border-blue-100 px-6 py-2 font-medium text-blue-100 hover:bg-blue-100 hover:text-blue-950 focus:bg-blue-100 focus:text-blue-950"
+              >Book a call</a
+            >
+          </div>
+
+          <div class="footer__section" id="contact">
+            <h3 class="mb-4 text-lg font-semibold">Quick Links</h3>
+
+            <!-- use pseudo elements for the links then scale-x removed on hover -->
+            <ul class="flex flex-col gap-2 leading-relaxed text-white/80">
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=aarongtxd@gmail.com&su=Hello&body=Hi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email Aaron via Gmail"
+                  class="relative inline-block"
+                  >Services</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/aaron-cerezo-609938241/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Aaron's LinkedIn"
+                  class="relative inline-block"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/aaronj.cer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Contact Aaron via Instagram"
+                  class="relative inline-block"
+                  >Testimonials</a
                 >
               </li>
               <li>
@@ -996,8 +1267,18 @@
                   target="_blank"
                   aria-label="Checkout Aaron's project on GitHub"
                   rel="noopener noreferrer"
-                  class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-1.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white hover:after:scale-x-0"
-                  >See My Projects On GitHub</a
+                  class="relative inline-block"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/PastaSus?tab=repositories"
+                  target="_blank"
+                  aria-label="Checkout Aaron's project on GitHub"
+                  rel="noopener noreferrer"
+                  class="relative inline-block"
+                  >Technologies</a
                 >
               </li>
             </ul>
@@ -1005,19 +1286,8 @@
         </div>
 
         <div
-          class="footer__bottom border-t border-white/10 pt-6 text-center text-white/60"
+          class="footer__bottom border-t border-white/10 pt-6 text-start text-white/60"
         >
-          <p class="mt-2 text-xs">
-            Disclaimer: Most Designs are from
-            <a
-              href="https://www.frontendmentor.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="relative inline-block duration-300 ease-in-out after:absolute after:bottom-0.5 after:left-0 after:h-0.25 after:w-full after:origin-left after:bg-white after:transition-transform after:content-[''] hover:text-white/80 hover:after:scale-x-0"
-            >
-              Frontend Mentor </a
-            >, coded by me.
-          </p>
           <p class="mt-3">&copy; 2025 Aaron Cerezo. All rights reserved.</p>
         </div>
       </div>
