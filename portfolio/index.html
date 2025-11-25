@@ -35,7 +35,7 @@
     <!-- Skip to main content link for screen readers -->
     <a
       href="#main"
-      class="skip-link absolute -top-10 left-0 bg-black px-4 py-2 text-white"
+      class="skip-link absolute -top-10 left-0 bg-orange-500 px-4 py-2 font-black text-blue-950"
       >Skip to main content</a
     >
     <!-- Header -->
@@ -141,124 +141,146 @@
     -->
 
     <!-- Header -->
-    <header
-      class="header relative md:flex md:items-center md:justify-between md:px-3"
-    >
-      <div class="header__container flex justify-between px-3 py-6 md:p-0">
-        <!-- Logo -->
-        <a
-          href="#"
-          class="header__logo relative max-w-10 md:max-w-12"
-          aria-label="Back to homepage"
-        >
-          <img
-            src="src/assets/icons/logo-github.svg"
-            class="h-10 w-10"
-            alt=""
-          />
-        </a>
-        <div class="flex items-center gap-2">
+    <header class="header bg-[#0f172a]">
+      <div class="relative md:flex md:items-center md:justify-between md:px-3">
+        <div class="header__container flex justify-between px-3 py-6 md:p-0">
+          <!-- Logo -->
           <a
-            href="https://calendly.com/aaroncerezo"
-            rel="noopener noreferrer"
-            aria-label=""
-            target="_blank"
-            class="cta inline-block rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)] md:hidden"
-            >Let's Talk</a
-          >
-          <!-- Mobile Nav Toggle -->
-          <button
-            class="nav__open cursor-pointer md:hidden"
-            aria-label="Open navigation menu"
-            aria-controls="mobileNav"
-            aria-expanded="false"
-            type="button"
+            href="#"
+            class="header__logo relative max-w-10 md:max-w-12"
+            aria-label="Back to homepage"
           >
             <img
-              src="src/assets/icons/menu-outline.svg"
-              alt=""
+              src="src/assets/icons/logo-github.svg"
               class="h-10 w-10"
-            />
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile Navigation Menu -->
-      <nav
-        class="nav fixed top-0 right-0 z-10 h-dvh w-[68.5dvw] translate-x-full bg-white opacity-0 transition-transform duration-700 ease-in-out md:relative md:h-auto md:w-auto md:translate-x-0 md:opacity-100"
-        id="mobileNav"
-        hidden
-      >
-        <div class="mt-6 flex px-3 md:hidden">
-          <button
-            class="nav__close ml-auto cursor-pointer md:hidden"
-            aria-label="Close navigation menu"
-            aria-controls="mobileNav"
-            type="button"
-          >
-            <img
-              src="src/assets/icons/close-outline.svg"
               alt=""
-              class="h-10 w-10"
             />
-          </button>
+          </a>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://calendly.com/aaroncerezo"
+              rel="noopener noreferrer"
+              aria-label="Book a call through calendly"
+              target="_blank"
+              class="cta inline-block rounded-full bg-[hsl(225,67%,53%)] px-6 py-2 text-center font-medium text-slate-200 hover:bg-blue-900 md:hidden"
+              >Let's Talk</a
+            >
+            <!-- Mobile Nav Toggle -->
+            <button
+              class="nav__open cursor-pointer md:hidden"
+              aria-label="Open navigation menu"
+              aria-controls="mobileNav"
+              aria-expanded="false"
+              type="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-10 w-10 text-blue-100"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="32"
+                  d="M80 160h352M80 256h352M80 352h352"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <ul
-          class="nav__list flex flex-col gap-7 px-5 pr-0 tracking-widest text-blue-950 md:flex-row md:gap-3 md:py-0 md:pl-0"
+        <!-- Mobile Navigation Menu -->
+        <nav
+          class="nav fixed top-0 right-0 z-10 h-dvh w-[68.5dvw] translate-x-full bg-blue-100 opacity-0 transition-transform duration-700 ease-in-out md:relative md:h-auto md:w-auto md:translate-x-0 md:bg-[#0f172a] md:opacity-100"
+          id="mobileNav"
+          hidden
         >
-          <li class="nav__item">
-            <a
-              href="#services"
-              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
+          <div class="mt-6 flex px-3 md:hidden">
+            <button
+              class="nav__close ml-auto cursor-pointer md:hidden"
+              aria-label="Close navigation menu"
+              aria-controls="mobileNav"
+              type="button"
             >
-              <!-- <span class="nav__index font-bold" aria-hidden="true">01</span> -->
-              <span class="">Services</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a
-              href="#technologies"
-              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
-            >
-              <span class="">Technologies</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a
-              href="#projects"
-              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
-            >
-              <span class="">Portfolio</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a
-              href="#about"
-              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
-            >
-              <span class="">About</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a
-              href="#contacts"
-              class="nav__link relative flex gap-3 text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full"
-            >
-              <span class="">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon h-10 w-10 text-blue-950"
+                aria-hidden="true"
+                focusable="false"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M368 368L144 144M368 144L144 368"
+                />
+              </svg>
+            </button>
+          </div>
 
-      <a
-        href="https://calendly.com/aaroncerezo"
-        rel="noopener noreferrer"
-        aria-label=""
-        target="_blank"
-        class="cta hidden rounded-full bg-blue-900 px-6 py-2 text-center font-medium text-slate-200 hover:bg-[hsl(225,67%,53%)] md:inline-block"
-        >Let's Talk</a
-      >
+          <ul
+            class="nav__list flex flex-col gap-7 px-5 pr-0 tracking-widest md:flex-row md:gap-3 md:py-0 md:pl-0"
+          >
+            <li class="nav__item">
+              <a
+                href="#services"
+                class="nav__link relative flex gap-3 font-bold text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:text-blue-100/80 md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full md:hover:text-blue-100 md:focus:text-blue-100"
+              >
+                <!-- <span class="nav__index font-bold" aria-hidden="true">01</span> -->
+                <span class="">Services</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#technologies"
+                class="nav__link relative flex gap-3 font-bold text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:text-blue-100/80 md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full md:hover:text-blue-100 md:focus:text-blue-100"
+              >
+                <span class="">Technologies</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#projects"
+                class="nav__link relative flex gap-3 font-bold text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:text-blue-100/80 md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full md:hover:text-blue-100 md:focus:text-blue-100"
+              >
+                <span class="">Portfolio</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#about"
+                class="nav__link relative flex gap-3 font-bold text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:text-blue-100/80 md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full md:hover:text-blue-100 md:focus:text-blue-100"
+              >
+                <span class="">About</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#contacts"
+                class="nav__link relative flex gap-3 font-bold text-blue-900 uppercase hover:text-blue-950 focus:text-blue-950 md:py-8.5 md:font-semibold md:text-blue-100/80 md:after:top-auto md:after:bottom-0 md:after:h-[3px] md:after:w-full md:hover:text-blue-100 md:focus:text-blue-100"
+              >
+                <span class="">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://calendly.com/aaroncerezo"
+          rel="noopener noreferrer"
+          aria-label="Book a call through calendly"
+          target="_blank"
+          class="cta hidden rounded-full bg-[hsl(225,67%,53%)] px-6 py-2 text-center font-medium text-slate-200 hover:bg-blue-900 md:inline-block"
+          >Let's Talk</a
+        >
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -274,7 +296,7 @@
         <!-- <div
           class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20"
         ></div> -->
-        <div class="relative container mx-auto px-4">
+        <div class="relative px-3 md:mx-auto md:max-w-2xl">
           <h1
             id="main-heading"
             class="main-heading mb-4 text-5xl font-bold text-blue-100 md:text-6xl"
@@ -283,7 +305,7 @@
             Creating web presence that drives growth for your business
           </h1>
 
-          <div class="container mx-auto flex">
+          <div class="flex">
             <a
               href="https://calendly.com/aaroncerezo"
               rel="noopener noreferrer"
@@ -301,18 +323,18 @@
         aria-labelledby="services-heading"
         id="services"
       >
-        <div class="">
-          <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
-            <h2
-              id="services-heading"
-              class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
-            >
-              Websites That Work as Hard as You Do
-            </h2>
-          </div>
-          <div class="bg-blue-950 px-3 py-10">
+        <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
+          <h2
+            id="services-heading"
+            class="font-['Poppins',_'sans-serif'] text-4xl font-semibold text-blue-950 md:text-5xl"
+          >
+            Websites That Work as Hard as You Do
+          </h2>
+        </div>
+        <div class="bg-blue-950">
+          <div class="relative px-3 py-10 md:mx-auto md:max-w-2xl md:py-14">
             <div class="text-start">
-              <h3 class="text-2xl font-semibold text-blue-100">
+              <h3 class="text-3xl font-semibold text-blue-100 md:text-4xl">
                 Turning Ideas Into Growth
               </h3>
               <p class="mt-4 text-lg leading-relaxed text-blue-100">
@@ -325,237 +347,249 @@
             <div class="mt-6 border-t border-t-blue-100">
               <details class="group border-b border-b-blue-100">
                 <summary
-                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45 md:before:text-4xl md:before:font-black"
                 >
-                  <h3 class="text-2xl font-medium text-blue-100">
+                  <h4 class="text-2xl font-semibold text-blue-100 md:text-3xl">
                     Accessibility & Structure
-                  </h3>
-                  <img src="" alt="" />
+                  </h4>
                 </summary>
-                <div class="mb-4">
-                  <h4 class="mb-4 text-blue-100">
+                <div class="mb-4 md:flex md:gap-3">
+                  <h5 class="mb-4 text-xl text-blue-100 md:flex-1">
                     Adhering to strict standards to make sites universally
                     usable and screen-reader compatible.
-                  </h4>
-                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
-                  <ul class="grid gap-1 text-blue-100">
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Semantic HTML Markup</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>ARIA</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Screen Reader Compatibility</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Alt Text for Images</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Meaningful Link Text</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Automated and Manual Accessibility audits</span>
-                    </li>
-                  </ul>
+                  </h5>
+                  <div class="md:flex-1">
+                    <p class="mb-4 text-lg text-cyan-400 uppercase">
+                      How i help
+                    </p>
+                    <ul class="grid gap-1 text-blue-100">
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Semantic HTML Markup</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>ARIA</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Screen Reader Compatibility</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Alt Text for Images</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Meaningful Link Text</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Automated and Manual Accessibility audits</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </details>
 
               <details class="group border-b border-b-blue-100">
                 <summary
-                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45 md:before:text-4xl md:before:font-black"
                 >
-                  <h3 class="text-2xl font-medium text-blue-100">
+                  <h4 class="text-2xl font-semibold text-blue-100 md:text-3xl">
                     Performance & Development
-                  </h3>
-                  <img src="" alt="" />
+                  </h4>
                 </summary>
-                <div class="mb-4">
-                  <h4 class="mb-4 text-blue-100">
+                <div class="mb-4 md:flex md:gap-3">
+                  <h5 class="mb-4 text-xl text-blue-100 md:flex-1">
                     I implement solid front-end foundations to ensure speed,
                     efficiency, and scalability.
-                  </h4>
-                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
-                  <ul class="grid gap-1 text-blue-100">
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Web Performance Optimization </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5 self-start"
-                      />
-                      <span>
-                        Utility-first CSS for responsive design and rapid
-                        development
-                      </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Vanilla JavaScript </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Code Maintainability</span>
-                    </li>
-                  </ul>
+                  </h5>
+                  <div class="md:flex-1">
+                    <p class="mb-4 text-lg text-cyan-400 uppercase">
+                      How i help
+                    </p>
+                    <ul class="grid gap-1 text-blue-100">
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Web Performance Optimization </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5 self-start"
+                        />
+                        <span>
+                          Utility-first CSS for responsive design and rapid
+                          development
+                        </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Vanilla JavaScript </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Code Maintainability</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </details>
 
               <details class="group border-b border-b-blue-100">
                 <summary
-                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45 md:before:text-4xl md:before:font-black"
                 >
-                  <h3 class="text-2xl font-medium text-blue-100">
+                  <h4 class="text-2xl font-semibold text-blue-100 md:text-3xl">
                     Leveraging AI
-                  </h3>
-                  <img src="" alt="" />
+                  </h4>
                 </summary>
-                <div class="mb-4">
-                  <h4 class="mb-4 text-blue-100">
+                <div class="mb-4 md:flex md:gap-3">
+                  <h5 class="mb-4 text-xl text-blue-100 md:flex-1">
                     Integrating AI tools into the workflow to ensure rapid
                     prototyping, higher code quality, and faster delivery
                     timelines.
-                  </h4>
-                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
-                  <ul class="grid gap-1 text-blue-100">
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Accelerated Prototyping </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Code Review & Refinement </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Enhanced Accessibility Auditing</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>SEO and Performance Analysis</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Documentation & Explanations</span>
-                    </li>
-                  </ul>
+                  </h5>
+                  <div class="md:flex-1">
+                    <p class="mb-4 text-lg text-cyan-400 uppercase">
+                      How i help
+                    </p>
+                    <ul class="grid gap-1 text-blue-100">
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Accelerated Prototyping </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Code Review & Refinement </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Enhanced Accessibility Auditing</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>SEO and Performance Analysis</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Documentation & Explanations</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </details>
 
               <details class="group border-b border-b-blue-100">
                 <summary
-                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45"
+                  class="relative cursor-pointer py-4 before:absolute before:top-1/2 before:right-0 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-blue-100 before:transition-transform before:ease-in-out before:content-['+'] group-open:before:rotate-45 md:before:text-4xl md:before:font-black"
                 >
-                  <h3 class="text-2xl font-medium text-blue-100">
+                  <h4 class="text-2xl font-semibold text-blue-100 md:text-3xl">
                     Ongoing Services
-                  </h3>
-                  <img src="" alt="" />
+                  </h4>
                 </summary>
-                <div class="mb-4">
-                  <h4 class="mb-4 text-blue-100">
+                <div class="mb-4 md:flex md:gap-3">
+                  <h5 class="mb-4 text-xl text-blue-100 md:flex-1">
                     Ensuring your digital presence remains fast, accessible, and
                     up-to-date long after the initial launch.
-                  </h4>
-                  <p class="mb-4 text-xl text-cyan-400 uppercase">How i help</p>
-                  <ul class="grid gap-1 text-blue-100">
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Continuous Performance Monitoring </span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Accessibility Maintenance</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Codebase Maintenance</span>
-                    </li>
-                    <li class="flex items-center gap-1 text-lg">
-                      <img
-                        src="/src/assets/icons/checkmark-outline.svg"
-                        alt=""
-                        class="h-5 w-5"
-                      />
-                      <span>Feature Scaling & Iteration</span>
-                    </li>
-                  </ul>
+                  </h5>
+                  <div class="md:flex-1">
+                    <p class="mb-4 text-lg text-cyan-400 uppercase">
+                      How i help
+                    </p>
+                    <ul class="grid gap-1 text-blue-100">
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Continuous Performance Monitoring </span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Accessibility Maintenance</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Codebase Maintenance</span>
+                      </li>
+                      <li class="flex items-center gap-1 text-lg">
+                        <img
+                          src="/src/assets/icons/checkmark-outline.svg"
+                          alt=""
+                          class="h-5 w-5"
+                        />
+                        <span>Feature Scaling & Iteration</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </details>
             </div>
@@ -572,69 +606,84 @@
         <div class="grid min-h-[50vh] items-center px-3 pb-15 text-center">
           <h2
             id="technologies-heading"
-            class="mb-4 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            class="font-['Poppins',_'sans-serif'] text-4xl font-semibold text-blue-950 md:text-5xl"
           >
             Tech & Tools that i use
           </h2>
         </div>
-        <div class="tech-grid grid grid-cols-2 bg-blue-950 px-3 py-10">
-          <!--  -->
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+        <div class="tech-grid bg-blue-950">
+          <div
+            class="grid grid-cols-2 px-3 py-10 md:mx-auto md:max-w-2xl md:py-14"
           >
-            <figcaption class="text-lg text-blue-100">HTML5</figcaption>
-            <img
-              src="src/assets/icons/HTML5.svg"
-              alt="HTML5 logo"
-              class="h-10 w-10"
-            />
-          </figure>
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
-          >
-            <figcaption class="text-lg text-blue-100">Tailwind</figcaption>
-            <img
-              src="src/assets/icons/Tailwind-CSS.svg"
-              alt="Tailwind logo"
-              class="h-10 w-10"
-            />
-          </figure>
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
-          >
-            <figcaption class="text-lg text-blue-100">Javascript</figcaption>
-            <img
-              src="src/assets/icons/JavaScript.svg"
-              alt="JavaScript logo"
-              class="h-10 w-10"
-            />
-          </figure>
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
-          >
-            <figcaption class="text-lg text-blue-100">NodeJS</figcaption>
-            <img
-              src="src/assets/icons/Node.js.svg"
-              alt="NodeJS logo"
-              class="h-10 w-10"
-            />
-          </figure>
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
-          >
-            <figcaption class="text-lg text-blue-100">Vite</figcaption>
-            <img
-              src="src/assets/icons/vite.js.svg"
-              alt="Vite logo"
-              class="h-10 w-10"
-            />
-          </figure>
-          <figure
-            class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
-          >
-            <figcaption class="text-lg text-blue-100">Soon</figcaption>
-            <img src="" alt="" class="h-10 w-10" />
-          </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                HTML5
+              </figcaption>
+              <img
+                src="src/assets/icons/HTML5.svg"
+                alt="HTML5 logo"
+                class="h-10 w-10"
+              />
+            </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                Tailwind
+              </figcaption>
+              <img
+                src="src/assets/icons/Tailwind-CSS.svg"
+                alt="Tailwind logo"
+                class="h-10 w-10"
+              />
+            </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                Javascript
+              </figcaption>
+              <img
+                src="src/assets/icons/JavaScript.svg"
+                alt="JavaScript logo"
+                class="h-10 w-10"
+              />
+            </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                NodeJS
+              </figcaption>
+              <img
+                src="src/assets/icons/Node.js.svg"
+                alt="NodeJS logo"
+                class="h-10 w-10"
+              />
+            </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                Vite
+              </figcaption>
+              <img
+                src="src/assets/icons/Vite.js.svg"
+                alt="Vite logo"
+                class="h-10 w-10"
+              />
+            </figure>
+            <figure
+              class="relative flex items-center justify-between p-6 before:absolute before:top-0 before:right-0 before:bottom-[1px] before:left-[1px] before:shadow-[0_0_0_1px_#7dd3fc] before:content-['']"
+            >
+              <figcaption class="text-lg text-blue-100 md:text-xl">
+                Soon
+              </figcaption>
+              <img src="" alt="" class="h-10 w-10" />
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -649,526 +698,512 @@
         >
           <h2
             id="projects-heading"
-            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            class="font-['Poppins',_'sans-serif'] text-4xl font-semibold text-blue-950 md:text-5xl"
           >
             Works i've done so far
           </h2>
         </div>
 
-        <div
-          class="projects__grid grid grid-cols-1 gap-8 bg-blue-100 px-3 py-15 md:grid-cols-2 xl:grid-cols-3"
-        >
-          <!-- Project 1 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 512 512"
+        <div class="projects__grid bg-blue-100">
+          <div
+            class="grid grid-cols-1 gap-8 px-3 py-15 md:mx-auto md:max-w-2xl md:grid-cols-2 xl:grid-cols-3"
+          >
+            <!-- Project 1 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
               >
-                <path
-                  d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-                <path
-                  d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-              </svg>
-            </div>
-
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Huddle Landing With Curved Sections
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Single-page SaaS-style landing page challenge, built with curved
-                section dividers, and responsive layouts.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://pastasus.github.io/huddle-landing-page-with-curved-sections-master/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of huddle landing page with curved sections"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  focusable="false"
+                  aria-hidden="true"
+                  viewBox="0 0 512 512"
                 >
-                  <span>Live Site</span>
-                </a>
+                  <path
+                    d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
               </div>
-            </div>
-          </article>
 
-          <!-- Project 2 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Bookmark Landing
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Multi-section product landing page with a clean, responsive
-                design, interactive tabbed features, and accessible navigation.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://bookmark-landing-page-master-b1.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of bookmark landing page"
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
                 >
-                  <span>Live Site</span>
-                </a>
+                  Huddle Landing With Curved Sections
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Single-page SaaS-style landing page challenge, built with
+                  curved section dividers, and responsive layouts.
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://pastasus.github.io/huddle-landing-page-with-curved-sections-master/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of huddle landing page with curved sections"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Project 3 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
+            <!-- Project 2 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
               >
-                <path
-                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Loopstudios Landing
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Agency-style landing page with immersive hero section,
-                responsive image grids, and accessible navigation patterns.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://loopstudios-landing-page-main-ac.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of loopstudios landing page"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  focusable="false"
+                  aria-hidden="true"
+                  viewBox="0 0 512 512"
                 >
-                  <span>Live Site</span>
-                </a>
+                  <path
+                    d="M128 80V64a48.14 48.14 0 0148-48h224a48.14 48.14 0 0148 48v368l-80-64"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M320 96H112a48.14 48.14 0 00-48 48v352l152-128 152 128V144a48.14 48.14 0 00-48-48z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
               </div>
-            </div>
-          </article>
-
-          <!-- Project4 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 fill-blue-100 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                  d="M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192"
-                />
-                <path
-                  d="M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                News Homepage
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                News-style homepage layout challenge, featuring a prominent hero
-                article, category listings, and responsive grid-based design.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://pastasus.github.io/news-homepage-main/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of news homepage"
+              <div class="project__content flex flex-col md:flex-1">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
                 >
-                  <span>Live Site</span>
-                </a>
-              </div>
-            </div>
-          </article>
+                  Bookmark Landing
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Multi-section product landing page with a clean, responsive
+                  design, interactive tabbed features, and accessible
+                  navigation.
+                </p>
 
-          <!-- Project 5 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://bookmark-landing-page-master-b1.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of bookmark landing page"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
               >
-                <path
-                  d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Room Homepage
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Furniture store landing page with an interactive hero carousel,
-                responsive breakpoints, and accessible navigation.
-              </p>
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://room-homepage-master-beta-ten.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of room homepage"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 512 512"
                 >
-                  <span>Live Site</span>
-                </a>
+                  <path
+                    d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
+                  />
+                </svg>
               </div>
-            </div>
-          </article>
-
-          <!-- Project 6 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M57.49 47.74l368.43 368.43a37.28 37.28 0 010 52.72h0a37.29 37.29 0 01-52.72 0l-90-91.55a32 32 0 01-9.2-22.43v-5.53a32 32 0 00-9.52-22.78l-11.62-10.73a32 32 0 00-29.8-7.44h0a48.53 48.53 0 01-46.56-12.63l-85.43-85.44C40.39 159.68 21.74 83.15 57.49 47.74z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-                <path
-                  d="M400 32l-77.25 77.25A64 64 0 00304 154.51v14.86a16 16 0 01-4.69 11.32L288 192M320 224l11.31-11.31a16 16 0 0111.32-4.69h14.86a64 64 0 0045.26-18.75L480 112M440 72l-80 80M200 368l-99.72 100.28a40 40 0 01-56.56 0h0a40 40 0 010-56.56L128 328"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Omni-Food
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                A smart meal-planning platform offering personalized nutrition
-                and easy-to-follow food recommendations.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://pastasus.github.io/omnifood/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of Omni-food"
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
                 >
-                  <span>Live Site</span>
-                </a>
+                  Loopstudios Landing
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Agency-style landing page with immersive hero section,
+                  responsive image grids, and accessible navigation patterns.
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://loopstudios-landing-page-main-ac.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of loopstudios landing page"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Project 7 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
+            <!-- Project4 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
               >
-                <path
-                  d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-                <circle
-                  cx="256"
-                  cy="256"
-                  r="160"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Space Tourism
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Immersive multi-page space tourism site featuring accessible tab
-                navigation, fully responsive layouts, and semantic HTML for
-                performance.
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://space-tourism-website-main-ac.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of space tourism"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 fill-blue-100 text-blue-100"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 512 512"
                 >
-                  <span>Live Site</span>
-                </a>
+                  <path
+                    d="M368 415.86V72a24.07 24.07 0 00-24-24H72a24.07 24.07 0 00-24 24v352a40.12 40.12 0 0040 40h328"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M416 464h0a48 48 0 01-48-48V128h72a24 24 0 0124 24v264a48 48 0 01-48 48z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="M240 128h64M240 192h64M112 256h192M112 320h192M112 384h192"
+                  />
+                  <path
+                    d="M176 208h-64a16 16 0 01-16-16v-64a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16z"
+                  />
+                </svg>
               </div>
-            </div>
-          </article>
-
-          <!-- Project 8 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                Speous
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Personal portfolio showcasing creative projects and UI design
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://Speous.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of loopstudios landing page"
+              <div class="project__content flex flex-col md:flex-1">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
                 >
-                  <span>Live Site</span>
-                </a>
+                  News Homepage
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  News-style homepage layout challenge, featuring a prominent
+                  hero article, category listings, and responsive grid-based
+                  design.
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://pastasus.github.io/news-homepage-main/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of news homepage"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Project 9 -->
-          <article class="project__card md:grid">
-            <div
-              class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="ionicon h-20 w-20 text-blue-100"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 512 512"
+            <!-- Project 5 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
               >
-                <path
-                  d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                />
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                  d="M360 94.59V296M443.13 212.87L296 360M417.41 360H216M299.13 443.13l-144-144M152 416V216M68.87 299.13l144-144M94.59 152H288M212.87 68.87L360 216"
-                />
-              </svg>
-            </div>
-            <div class="project__content md:grid">
-              <h3
-                class="mb-3 font-['Poppins',_'sans-serif'] text-xl font-semibold text-blue-950"
-              >
-                RG Collections
-              </h3>
-              <p class="mb-4 leading-relaxed text-slate-600">
-                Trinkets/Accessories website for a small business
-              </p>
-
-              <div class="project__links flex flex-wrap gap-3 md:mt-auto">
-                <a
-                  href="https://rg-collections.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
-                  aria-label="Live site of loopstudios landing page"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 512 512"
                 >
-                  <span>Live Site</span>
-                </a>
+                  <path
+                    d="M384 240H96V136a40.12 40.12 0 0140-40h240a40.12 40.12 0 0140 40v104zM48 416V304a64.19 64.19 0 0164-64h288a64.19 64.19 0 0164 64v112"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M48 416v-8a24.07 24.07 0 0124-24h368a24.07 24.07 0 0124 24v8M112 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16M256 240v-16a32.09 32.09 0 0132-32h80a32.09 32.09 0 0132 32v16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
               </div>
-            </div>
-          </article>
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
+                >
+                  Room Homepage
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Furniture store landing page with an interactive hero
+                  carousel, responsive breakpoints, and accessible navigation.
+                </p>
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://room-homepage-master-beta-ten.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of room homepage"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M57.49 47.74l368.43 368.43a37.28 37.28 0 010 52.72h0a37.29 37.29 0 01-52.72 0l-90-91.55a32 32 0 01-9.2-22.43v-5.53a32 32 0 00-9.52-22.78l-11.62-10.73a32 32 0 00-29.8-7.44h0a48.53 48.53 0 01-46.56-12.63l-85.43-85.44C40.39 159.68 21.74 83.15 57.49 47.74z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    d="M400 32l-77.25 77.25A64 64 0 00304 154.51v14.86a16 16 0 01-4.69 11.32L288 192M320 224l11.31-11.31a16 16 0 0111.32-4.69h14.86a64 64 0 0045.26-18.75L480 112M440 72l-80 80M200 368l-99.72 100.28a40 40 0 01-56.56 0h0a40 40 0 010-56.56L128 328"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
+                >
+                  Omni-Food
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  A smart meal-planning platform offering personalized nutrition
+                  and easy-to-follow food recommendations.
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://pastasus.github.io/omnifood/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of Omni-food"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  aria-hidden="true"
+                  focusable="false"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M413.48 284.46c58.87 47.24 91.61 89 80.31 108.55-17.85 30.85-138.78-5.48-270.1-81.15S.37 149.84 18.21 119c11.16-19.28 62.58-12.32 131.64 14.09"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <circle
+                    cx="256"
+                    cy="256"
+                    r="160"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
+                >
+                  Space Tourism
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Immersive multi-page space tourism site featuring accessible
+                  tab navigation, fully responsive layouts, and semantic HTML
+                  for performance.
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://space-tourism-website-main-ac.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of space tourism"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M452.37 59.63h0a40.49 40.49 0 00-57.26 0L184 294.74c23.08 4.7 46.12 27.29 49.26 49.26l219.11-227.11a40.49 40.49 0 000-57.26zM138 336c-29.88 0-54 24.5-54 54.86 0 23.95-20.88 36.57-36 36.57C64.56 449.74 92.82 464 120 464c39.78 0 72-32.73 72-73.14 0-30.36-24.12-54.86-54-54.86z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="project__content flex flex-col md:flex-1">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
+                >
+                  Speous
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Personal portfolio showcasing creative projects and UI design
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://Speous.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of loopstudios landing page"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 9 -->
+            <article class="project__card flex flex-col">
+              <div
+                class="project__image mb-5 flex h-52 items-center justify-center overflow-hidden bg-blue-900 text-5xl text-black"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="ionicon h-20 w-20 text-blue-100"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="project__content flex flex-col">
+                <h3
+                  class="mb-3 font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950"
+                >
+                  RG Collections
+                </h3>
+                <p class="mb-4 text-lg leading-relaxed text-slate-600">
+                  Trinkets/Accessories website for a small business
+                </p>
+
+                <div class="project__links flex flex-wrap gap-3 md:mt-auto">
+                  <a
+                    href="https://rg-collections.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project__demo underline-animate flex items-center gap-3 rounded-md text-lg font-medium text-blue-900 hover:text-blue-950 focus:text-blue-950"
+                    aria-label="Live site of loopstudios landing page"
+                  >
+                    <span>Live Site</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -1183,7 +1218,7 @@
           class="about__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
         >
           <h2
-            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            class="font-['Poppins',_'sans-serif'] text-4xl font-semibold text-blue-950 md:text-5xl"
             id="about-heading"
           >
             A good website doesn’t just look great—it works great for everyone.
@@ -1191,10 +1226,10 @@
         </div>
         <div class="bg-blue-100 px-3 py-15">
           <div class="mb-4">
-            <h3 class="mb-3 text-2xl font-semibold text-blue-950">
+            <h3 class="mb-3 text-3xl font-semibold text-blue-950">
               My Approach & Values
             </h3>
-            <p class="leading-relaxed text-slate-600">
+            <p class="text-lg leading-relaxed text-slate-600">
               A web developer who builds clean, functional, and accessible
               websites with a focus on clarity and usability. I rely on proven
               UI patterns and thoughtful layout decisions to ensure every
@@ -1202,12 +1237,10 @@
             </p>
           </div>
           <div class="mb-4">
-            <h3 class="mb-3 text-2xl font-semibold text-blue-950">
+            <h3 class="mb-3 text-3xl font-semibold text-blue-950">
               Expectations when working with me
             </h3>
-            <p class="mb-3 leading-relaxed text-slate-600">
-              <!-- I believe successful projects come from clear communication and
-              steady collaboration. -->
+            <p class="mb-3 text-lg leading-relaxed text-slate-600">
               I believe successful projects come from clear communication,
               steady updates, and building with purpose—so you always know
               what’s happening and why each decision is made.
@@ -1223,27 +1256,31 @@
             </ul>
           </div>
           <div class="">
-            <h3 class="mb-4 text-2xl font-semibold text-blue-950">
+            <h3 class="mb-4 text-3xl font-semibold text-blue-950">
               The Results Speak. So Do My Clients.
             </h3>
 
-            <div class="grid gap-3">
+            <div class="grid gap-3 md:grid-cols-2">
               <figure
-                class="grid border-2 border-slate-500 bg-blue-950 p-6 text-blue-100"
+                class="border-2 border-slate-500 bg-blue-950 p-6 text-blue-100 md:flex md:flex-1 md:flex-col"
               >
-                <img
-                  src="src/assets/images/sp-logo.avif"
-                  alt="Company Logo"
-                  class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
-                  loading="lazy"
-                />
-                <blockquote class="mb-4 text-center">
+                <div class="grid justify-items-center">
+                  <img
+                    src="src/assets/images/sp-logo.avif"
+                    alt="Company Logo"
+                    class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
+                    loading="lazy"
+                  />
+                </div>
+                <blockquote class="mb-4 text-center text-lg">
                   I can tell that Aaron is passionate about every project he
                   works on. He communicates well, delivers timely updates, and
                   truly cares about the outcome. As a designer myself, I’m very
                   happy with how the website turned out.
                 </blockquote>
-                <figcaption class="testimonial-author flex items-center gap-3">
+                <figcaption
+                  class="testimonial-author flex items-center gap-3 md:mt-auto"
+                >
                   <img
                     src="src/assets/images/jairus-pfp.jpg"
                     alt="profile picture of jairus aquino"
@@ -1258,15 +1295,17 @@
               </figure>
 
               <figure
-                class="grid border-2 border-slate-500 bg-blue-950 p-6 text-blue-100"
+                class="border-2 border-slate-500 bg-blue-950 p-6 text-blue-100 md:flex md:flex-1 md:flex-col"
               >
-                <img
-                  src="src/assets/images/rg-logo.png"
-                  alt="Company Logo"
-                  class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
-                  loading="lazy"
-                />
-                <blockquote class="mb-4 text-center">
+                <div class="grid justify-items-center">
+                  <img
+                    src="src/assets/images/rg-logo.png"
+                    alt="Company Logo"
+                    class="testimonial-logo mb-3 h-20 w-20 justify-self-center"
+                    loading="lazy"
+                  />
+                </div>
+                <blockquote class="mb-4 text-center text-lg">
                   Working with Aaron to create a website for RG collections - a
                   cozy little shop specializing in trinkets, toys, and unique
                   gifts was an absolute pleasure and a resounding success. As a
@@ -1274,7 +1313,9 @@
                   feel of our online presence is just as important as the
                   products themselves. I couldn't be happier with the result!
                 </blockquote>
-                <figcaption class="testimonial-author flex items-center gap-3">
+                <figcaption
+                  class="testimonial-author flex items-center gap-3 md:mt-auto"
+                >
                   <img
                     src="src/assets/images/rona-pfp.jpg"
                     alt="Profile picture of Rona Galleno"
@@ -1302,7 +1343,7 @@
           class="closing-cta__header grid min-h-[50vh] items-center px-3 pb-15 text-center"
         >
           <h2
-            class="font-['Poppins',_'sans-serif'] text-3xl font-semibold text-blue-950 md:text-4xl"
+            class="font-['Poppins',_'sans-serif'] text-4xl font-semibold text-blue-950 md:text-5xl"
             id="closing-cta-heading"
           >
             Better results,<br />
@@ -1324,7 +1365,7 @@
               Keep your customers engaged, the simple way.
             </h3>
 
-            <p class="text-blue-100">
+            <p class="text-lg text-blue-100">
               Let’s chat and bring your ideas to life.
             </p>
 
@@ -1343,14 +1384,14 @@
       <div class="container mx-auto px-4">
         <div class="footer__content mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="footer__section" id="footer-about">
-            <h3 class="mb-4 text-lg font-semibold text-blue-100">
+            <h3 class="mb-4 text-xl font-semibold text-blue-100">
               Aaron Cerezo
             </h3>
-            <p class="mb-3 leading-relaxed text-blue-100/80">
+            <p class="mb-3 text-lg leading-relaxed text-blue-100/80">
               Building simple, accessible web experiences for growing
               businesses.
             </p>
-            <p class="flex items-center text-blue-100">
+            <p class="flex items-center text-lg text-blue-100/90">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ionicon h-6 w-6 fill-blue-100"
@@ -1378,7 +1419,7 @@
           </div>
 
           <div class="footer__section" id="contacts">
-            <h3 class="mb-4 text-lg font-semibold text-blue-100">Contact</h3>
+            <h3 class="mb-4 text-xl font-semibold text-blue-100">Contact</h3>
 
             <!-- use pseudo elements for the links then scale-x removed on hover -->
             <ul
@@ -1482,7 +1523,7 @@
           </div>
 
           <div class="footer__section" id="quick-links">
-            <h3 class="mb-4 text-lg font-semibold text-blue-100">
+            <h3 class="mb-4 text-xl font-semibold text-blue-100">
               Quick Links
             </h3>
 
@@ -1493,7 +1534,7 @@
                   href="#services"
                   rel="noopener noreferrer"
                   aria-label="Email Aaron via Gmail"
-                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
+                  class="relative inline-block text-lg hover:text-blue-100 focus:text-blue-100"
                   >Services</a
                 >
               </li>
@@ -1503,7 +1544,7 @@
                   href="#projects"
                   rel="noopener noreferrer"
                   aria-label="Visit Aaron's LinkedIn"
-                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
+                  class="relative inline-block text-lg hover:text-blue-100 focus:text-blue-100"
                   >Portfolio</a
                 >
               </li>
@@ -1512,7 +1553,7 @@
                   href="#about"
                   aria-label="Checkout Aaron's project on GitHub"
                   rel="noopener noreferrer"
-                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
+                  class="relative inline-block text-lg hover:text-blue-100 focus:text-blue-100"
                   >About</a
                 >
               </li>
@@ -1521,7 +1562,7 @@
                   href="#technologies"
                   aria-label="Checkout Aaron's project on GitHub"
                   rel="noopener noreferrer"
-                  class="relative inline-block hover:text-blue-100 focus:text-blue-100"
+                  class="relative inline-block text-lg hover:text-blue-100 focus:text-blue-100"
                   >Technologies</a
                 >
               </li>
