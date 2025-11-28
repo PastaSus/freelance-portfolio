@@ -49,11 +49,6 @@
       >Skip to main content</a
     >
 
-    <!-- Above: old header
-          Below: new header
-          nav should close if a link is clicked in mobile 
-    -->
-
     <!-- Header -->
     <header class="header bg-[#0f172a]">
       <div class="relative md:flex md:items-center md:justify-between md:px-3">
@@ -206,7 +201,7 @@
 md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-desktop.webp')]
          -->
       <section
-        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white"
+        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white xl:min-h-dvh"
         aria-labelledby="main-heading"
         id="hero"
       >
@@ -244,7 +239,7 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
           <!-- Fallback for browsers that don’t support AVIF/WebP -->
           <img
             src="/src/assets/images/hero-desktop.jpg"
-            alt="Hero Background"
+            alt=""
             class="absolute inset-0 h-full w-full object-cover"
             loading="eager"
             fetchpriority="high"
