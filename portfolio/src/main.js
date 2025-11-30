@@ -1,37 +1,3 @@
-// const toggleBtn = document.querySelector(".nav-toggle");
-// const navLinks = document.querySelector(".nav-links");
-
-// toggleBtn.addEventListener("click", () => {
-//   if (navLinks.classList.contains("hidden")) {
-//     // Show menu
-//     navLinks.classList.remove("hidden");
-
-//     // Allow transition to take effect
-//     setTimeout(() => {
-//       navLinks.classList.remove("-translate-y-50");
-//     }, 50);
-
-//     // Update aria-label
-//     toggleBtn.setAttribute("aria-label", "Close Navigation");
-//   } else {
-//     // Hide menu
-//     navLinks.classList.add("-translate-y-50");
-
-//     // Wait for transition to finish, then hide
-//     navLinks.addEventListener(
-//       "transitionend",
-//       function handler() {
-//         navLinks.classList.add("hidden");
-//         navLinks.removeEventListener("transitionend", handler);
-//       },
-//       { once: true },
-//     );
-
-//     // Update aria-label
-//     toggleBtn.setAttribute("aria-label", "Open Navigation");
-//   }
-// });
-// below is code from space tourism nav that i want to integrate here in my portfolio
 const openNavBtn = document.querySelector(".nav__open");
 const closeNavBtn = document.querySelector(".nav__close");
 const nav = document.querySelector(".nav");
@@ -62,7 +28,7 @@ function animateOpenNav() {
     nav.classList.add("translate-x-0", "opacity-100");
   });
 
-  openNavBtn.setAttribute("aria-expanded", "true");
+  // openNavBtn.setAttribute("aria-expanded", "true");
   removeTrapFocus = trapFocus(nav);
   closeNavBtn.focus();
 }
@@ -83,7 +49,7 @@ function animateCloseNav() {
     { once: true },
   );
 
-  openNavBtn.setAttribute("aria-expanded", "false");
+  // openNavBtn.setAttribute("aria-expanded", "false");
   openNavBtn.focus();
 
   if (removeTrapFocus) removeTrapFocus();
