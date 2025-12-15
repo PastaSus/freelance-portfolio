@@ -58,11 +58,7 @@
             class="header__logo relative max-w-10 md:max-w-12"
             aria-label="Back to homepage"
           >
-            <img
-              src="src/assets/icons/logo-github.svg"
-              class="h-10 w-10 md:h-14 md:w-14"
-              alt=""
-            />
+            <img src="src/assets/icons/NN-logo.svg" class="" alt="" />
           </a>
           <div class="flex items-center gap-2">
             <a
@@ -201,17 +197,16 @@
 md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-desktop.webp')]
          -->
       <section
-        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white xl:min-h-dvh"
+        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/70 before:to-black/20 before:content-[''] xl:min-h-dvh"
         aria-labelledby="main-heading"
         id="hero"
       >
         <!-- Gradient overlay -->
         <!-- <div
-          class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20"
+          class="before:absolute before:inset-0 bg-gradient-to-b from-black/60 to-black/20"
         ></div> -->
-        <picture
-          class="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)) md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)) absolute inset-0 h-full w-full"
-        >
+        <!-- <div> -->
+        <picture class="absolute inset-0 h-full w-full">
           <!-- Desktop image -->
           <source
             srcset="/src/assets/images/hero-desktop.avif"
@@ -245,6 +240,7 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
             fetchpriority="high"
           />
         </picture>
+        <!-- </div> -->
         <div
           class="relative px-3 md:mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
         >
@@ -1465,7 +1461,7 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
             <a href="#" aria-label="Back to Home" class="inline-block">
               <img
                 class="h-20 w-20 lg:h-24 lg:w-24"
-                src="/src/assets/icons/logo-github.svg"
+                src="src/assets/icons/NN-logo.svg"
                 alt=""
               />
             </a>
