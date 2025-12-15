@@ -7,9 +7,9 @@
 
     <meta
       name="description"
-      content="Frontend Developer Portfolio - Specializing in accessible, responsive landing pages with modern web technologies"
+      content="NN Studio is a frontend web studio by Aaron Cerezo, specializing in accessible, responsive, and performance-focused landing pages using modern web technologies."
     />
-    <title>Aaron Cerezo - Frontend Developer Portfolio</title>
+    <title>NN Studio | Freelance Web Development | Aaron Cerezo</title>
 
     <!-- Preload critical fonts -->
     <!-- Google Fonts Optimization -->
@@ -37,8 +37,6 @@
     <noscript>
       <link rel="stylesheet" href="/src/style.css" />
     </noscript>
-
-    <title>Freelance Web Development - Aaron Cerezo</title>
   </head>
   <body>
     <!-- Skip to main content link for screen readers -->
@@ -50,7 +48,9 @@
 
     <!-- Header -->
     <header class="header bg-[#0f172a]">
-      <div class="relative md:flex md:items-center md:justify-between md:px-3">
+      <div
+        class="relative md:flex md:items-center md:justify-between md:px-3 xl:px-4"
+      >
         <div class="header__container flex justify-between px-3 py-6 md:p-0">
           <!-- Logo -->
           <a
@@ -197,7 +197,7 @@
 md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/assets/images/hero-desktop.webp')]
          -->
       <section
-        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/70 before:to-black/20 before:content-[''] xl:min-h-dvh"
+        class="hero relative grid min-h-[90vh] items-center py-15 text-center text-white xl:min-h-dvh"
         aria-labelledby="main-heading"
         id="hero"
       >
@@ -206,7 +206,9 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
           class="before:absolute before:inset-0 bg-gradient-to-b from-black/60 to-black/20"
         ></div> -->
         <!-- <div> -->
-        <picture class="absolute inset-0 h-full w-full">
+        <picture
+          class="absolute inset-0 h-full w-full before:pointer-events-none before:absolute before:inset-0 before:z-1 before:content-['']"
+        >
           <!-- Desktop image -->
           <source
             srcset="/src/assets/images/hero-desktop.avif"
@@ -242,7 +244,7 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
         </picture>
         <!-- </div> -->
         <div
-          class="relative px-3 md:mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
+          class="relative z-2 px-3 md:mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
         >
           <h1
             id="main-heading"
@@ -1502,17 +1504,13 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
             <h3
               class="mb-4 text-xl font-semibold text-blue-100 md:text-2xl lg:text-3xl xl:text-4xl"
             >
-              Aaron Cerezo
+              NN Studio
             </h3>
-            <p
-              class="mb-3 text-lg leading-relaxed text-blue-100/80 lg:text-xl xl:text-2xl"
-            >
-              Building simple, accessible web experiences for growing
-              businesses.
+            <p class="mb-3 text-lg leading-relaxed text-blue-100/80 lg:text-xl">
+              A small, independent web studio run by a single developer,
+              building accessible and modern web experiences.
             </p>
-            <p
-              class="flex items-center text-lg text-blue-100/90 lg:text-xl xl:text-2xl"
-            >
+            <p class="flex items-center text-lg text-blue-100/90 lg:text-xl">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ionicon h-6 w-6 fill-blue-100"
@@ -1693,7 +1691,7 @@ md:bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('/src/asse
         <div
           class="footer__bottom border-t border-white/10 pt-6 text-start text-white/60"
         >
-          <p class="mt-3">&copy; 2025 Aaron Cerezo. All rights reserved.</p>
+          <p class="mt-3">&copy; 2025 NN Studio. All rights reserved.</p>
         </div>
       </div>
     </footer>

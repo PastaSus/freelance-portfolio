@@ -124,8 +124,8 @@
 }
 
 @layer components {
-  .hero::before {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  .hero picture::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
   }
   .underline-animate {
     @apply relative duration-300 ease-in-out after:absolute after:-bottom-0.25 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-950 after:transition-transform hover:after:scale-x-100 focus:after:scale-x-100;
