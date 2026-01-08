@@ -16,26 +16,29 @@ function changeNavHeader() {
 
 // Trap focus for accessibility
 let removeTrapFocus;
+let lastFocusedEl;
 
 function animateOpenNav() {
-  const isClosed = nav.classList.contains("translate-x-full");
-  if (!isClosed) return;
+  // Guard against double-open
+  if (!nav.hidden) return;
+
+  lastFocusedEl = document.activeElement;
 
   nav.hidden = false;
+  openNavBtn.setAttribute("aria-expanded", "true");
 
   requestAnimationFrame(() => {
     nav.classList.remove("translate-x-full", "opacity-0");
     nav.classList.add("translate-x-0", "opacity-100");
   });
 
-  // openNavBtn.setAttribute("aria-expanded", "true");
   removeTrapFocus = trapFocus(nav);
   closeNavBtn.focus();
 }
 
 function animateCloseNav() {
-  const isOpen = nav.classList.contains("translate-x-0");
-  if (!isOpen) return;
+  // Guard against double-close
+  if (nav.hidden) return;
 
   requestAnimationFrame(() => {
     nav.classList.add("translate-x-full", "opacity-0");
@@ -44,13 +47,16 @@ function animateCloseNav() {
   nav.addEventListener(
     "transitionend",
     () => {
-      if (nav.classList.contains("translate-x-full")) nav.hidden = true;
+      nav.hidden = true;
     },
     { once: true },
   );
 
-  // openNavBtn.setAttribute("aria-expanded", "false");
-  openNavBtn.focus();
+  openNavBtn.setAttribute("aria-expanded", "false");
+
+  if (lastFocusedEl) {
+    lastFocusedEl.focus({ preventScroll: true });
+  }
 
   if (removeTrapFocus) removeTrapFocus();
 }
@@ -58,6 +64,12 @@ function animateCloseNav() {
 // Focus trap function
 function trapFocus(container) {
   const focusables = container.querySelectorAll(".nav__close, .nav__link");
+
+  // Ensure focusables exist (safety guard)
+  if (focusables.length === 0) {
+    return () => {};
+  }
+
   const firstEl = focusables[0];
   const lastEl = focusables[focusables.length - 1];
 
